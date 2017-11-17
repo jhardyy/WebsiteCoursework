@@ -1,2 +1,18 @@
 ﻿body {
 }
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+  display: block;
+}
+/*
+  Styles label elements (tabs) *only* when they're 'checked'
+*/
+[id^="tab"]:checked + label {
+  background: #ccc;
+  color: #222;
+}
+[id^="tab"]:checked + label .fa {
+  color: #090;
+}
