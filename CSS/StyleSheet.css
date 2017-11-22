@@ -20,6 +20,9 @@ label {
   border-right: 3px #d9dee2 solid;
   border-left: 3px #d9dee2 solid;
 }
+label:hover {
+    color:black;
+}
 
 #TabNumber1:checked ~ #Tab1Content,
 #TabNumber2:checked ~ #Tab2Content,
@@ -30,13 +33,17 @@ label {
 /* CSS for different classes.*/
 
 .Image {
-    width:100%;
+    padding-top:10px;
+    width:99%;
+    height:300px;
 }
 
 .ImageContainer {
     position:relative;
     text-align: center;
     color: white;
+    background-color:cornflowerblue;
+    height:320px;
 }
 
 .WelcomeHeader {
@@ -52,16 +59,26 @@ label {
     right:20px;
     font-size:30px;
 }
-
-
+a:hover {
+    color:black;
+}
 
 .MainSection {
-    padding-top: 100px;
+    padding-top: 20px;
     padding-bottom:50px;
     padding-left:2px;
     margin: auto;
     width: 133%;
 
+}
+
+#PageSplitter {
+    border-color:cornflowerblue;
+    border-width:3px;
+    position:absolute;
+    top:450px;
+    left:20px;
+    right:20px;
 }
 
 .TabContent {
