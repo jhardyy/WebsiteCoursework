@@ -1,7 +1,4 @@
-﻿body {
-    background-color:cornflowerblue;
-}
-
+﻿
 /* CSS for the single page app using different tabs*/
 input,
 section {
@@ -32,33 +29,51 @@ label {
 
 /* CSS for different classes.*/
 
+.TopImageContainer {
+    position: relative;
+}
+
+.TopLeft {
+    position:absolute;
+    float:left;
+    top:8px;
+}
+
+.TopRight {
+    position: absolute;
+    float:right;
+    top: 8px;
+    
+}
+
+.WelcomeHeader {
+    display:inline;
+    font-size:40px;
+    padding-left:40px;
+}
+
+.LoginButton {
+    display:inline;
+    padding-right:50px;
+    font-size:30px;
+}
+
+
+
 .MainSection {
     padding-top: 100px;
     padding-bottom:50px;
-    position:center;
+    padding-left:2px;
+    margin: auto;
+    width: 133%;
+
 }
 
 .TabContent {
     float:left;
 }
 
-.TopOfPage {
-    background-color:blue;
-}
-.WelcomeHeader {
-    float: left;
-    font-size:40px;
-    padding-left:40px;
-    background-color:inherit;
-}
 
-.LoginButton {
-    float: right;
-    display:inline;
-    padding-right:30px;
-    font-size:30px;
-    background-color:inherit;
-}
 
 
 
