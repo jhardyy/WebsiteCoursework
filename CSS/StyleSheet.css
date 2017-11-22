@@ -29,32 +29,27 @@ label {
 
 /* CSS for different classes.*/
 
-.TopImageContainer {
-    position: relative;
+.Image {
+    width:100%;
 }
 
-.TopLeft {
-    position:absolute;
-    float:left;
-    top:8px;
-}
-
-.TopRight {
-    position: absolute;
-    float:right;
-    top: 8px;
-    
+.ImageContainer {
+    position:relative;
+    text-align: center;
+    color: white;
 }
 
 .WelcomeHeader {
-    display:inline;
+    position:absolute;
+    top:8px;
+    left:20px;
     font-size:40px;
-    padding-left:40px;
 }
 
 .LoginButton {
-    display:inline;
-    padding-right:50px;
+    position:absolute;
+    top:8px;
+    right:20px;
     font-size:30px;
 }
 
