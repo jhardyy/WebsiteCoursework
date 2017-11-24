@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>The Bakers Arms</title>
+    <title>DMU Restaurant</title>
 	<meta charset="utf-8" />
     <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link rel="stylesheet" href="CSS/StyleSheet.css?1422585377" type="text/css" />
-    <!-- <script type="text/javascript" language="javascript" src="JS/MainTabSlideShow.js"></script> -->
+    
    
 </head>
 <body>
@@ -13,14 +13,11 @@
     
         <div class="ImageContainer">
             <img class="Image" src="Headerfood.png" alt="Food">
-            <h1 class="WelcomeHeader">The Bakers Arms</h1>
+            <h1 class="WelcomeHeader">DMU Restaurant</h1>
             <a href="Login.html" type="Button" class="LoginButton">Login</a>
         </div>
-    
-    
 
             <div class="MainSection">
-       
        
             <input id="TabNumber1" type="radio" name="WelcomeTabs" checked>
             <label for="TabNumber1">Home</label>
@@ -31,9 +28,8 @@
 
         <hr id="PageSplitter" />
         
-
         <section id="Tab1Content" class="TabContent">
-            <header><h1>Welcome to the Bakers Arms website</h1></header>
+            <header><h1>Welcome to the DMU Restaurant Website</h1></header>
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
@@ -60,36 +56,15 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-            <script>
-                    var slideIndex = 0;
-                    showSlides();
-                    function showSlides() {
-                        var i;
-                        var slides = document.getElementsByClassName("mySlides");
-                        var dots = document.getElementsByClassName("dot");
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        slideIndex++;
-                        if (slideIndex > slides.length) { slideIndex = 1 }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
-                        }
-                        slides[slideIndex - 1].style.display = "block";
-                        dots[slideIndex - 1].className += " active";
-                        setTimeout(showSlides, 2000); // Change image every 2 seconds
-                    }
-            </script>
             </section>
         
 
 
         <section id="Tab2Content" class="TabContent">
             <header><h1>About us</h1></header>
-            <p>The bakers arms has been around for 30+ years serving quality food to the people in the market harborough district.</p>
-            <iframe width="600"height="450" frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVzYNwmgOcfTMtxFheyYqx3m9Qf3Z8Bss
-                    &q=The+Bakers+Arms+Thorpe+Langton/@52.5257747,-0.9103258,17z" allowfullscreen>
+            <p>The Dmu Restaurant is a new restaurant that serves the staff and students with high quality meals.</p>
+            <iframe class="GoogleMapAPI" frameborder="0"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVzYNwmgOcfTMtxFheyYqx3m9Qf3Z8Bss&q=De+Montfort+University" allowfullscreen>
             </iframe>
         </section>
 
@@ -104,7 +79,7 @@
 
     </div>
    
-    
+<script type="text/javascript" language="javascript" src="JS/MainTabSlideShow.js"></script>
 </body>
 
 </html>

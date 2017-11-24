@@ -89,11 +89,20 @@ a:hover {
     float:left;
 }
 
+.GoogleMapAPI {
+        width:600px;
+        height:450px;
+}
+
+
+
+
+/* Slideshow container */
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;}
 .mySlides {display:none}
 
-/* Slideshow container */
+
 .slideshow-container {
   max-width: 500px;
   position: relative;
