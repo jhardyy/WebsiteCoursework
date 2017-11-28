@@ -1,12 +1,14 @@
 ﻿body{
-    position:fixed;
-    left:0;
-    right:0;
+    position:absolute;
+    max-width:99%;
+    left: 0px;
+    right: 0px;
+   
     background-color:lightblue;
 }
 /* CSS for the single page app using different tabs*/
 input,
-section {
+.TabContent {
   display: none;
   padding: 1em;
   clear: both;
@@ -15,8 +17,8 @@ section {
 label {
   display: block;
   box-sizing: border-box;
-  float: left;
-  width: 25%;
+  width: 33%;
+  float:left;
   font-size: 30px;
   color: white;
   cursor: pointer;
@@ -25,6 +27,7 @@ label {
   border-right: 3px #d9dee2 solid;
   border-left: 3px #d9dee2 solid;
 }
+
 label:hover {
     color:black;
 }
@@ -40,9 +43,10 @@ label:hover {
 .Image {
     padding-top:10px;
     width:99%;
-    /*height:300px;*/
     height: auto;
-    max-width: 100%;
+    float:left;
+    max-width: 99%;
+    padding-bottom:8px;
    
 }
 
@@ -51,7 +55,6 @@ label:hover {
     text-align: center;
     color: white;
     background-color:cornflowerblue;
-    height:315px;
     max-width: 100%;
     height: auto;
     width: auto;
@@ -79,14 +82,14 @@ a:hover {
     padding-bottom:50px;
     padding-left:2px;
     margin: auto;
-    width: 133%;
+    width: 100%;
 }
 
 #PageSplitter {
     border-color:cornflowerblue;
     border-width:3px;
     position:absolute;
-    top:450px;
+    top:430px;
     left:20px;
     right:20px;
 }
@@ -94,6 +97,18 @@ a:hover {
 .TabContent {
     float:left;
     font-size:inherit;
+}
+
+.TabHeaders {
+    font-size:25px;
+}
+
+.AboutUsTab {
+    font-size:20px;
+    position:relative;
+    text-align:left;
+    max-width:100%;
+    height:auto;
 }
 
 .GoogleMapAPI {
@@ -108,12 +123,14 @@ body {font-family: Verdana,sans-serif;}
 
 
 .slideshow-container {
-  max-width: 500px;
-  position: relative;
+    padding-left:1000px;
+    width:100%;
+  position:center;
   margin: auto;
 }
 
 .SlideImage {
+    
     height:400px;
     max-width: 100%;
     width:600px; 
@@ -121,6 +138,7 @@ body {font-family: Verdana,sans-serif;}
 
 /* Caption text */
 .text {
+    
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -138,7 +156,7 @@ body {font-family: Verdana,sans-serif;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* The 3 dots at the bottom of the image. */
 .dot {
   height: 15px;
   width: 15px;
@@ -171,9 +189,10 @@ body {font-family: Verdana,sans-serif;}
   to {opacity: 1}
 }
 
+ /* RESPONSIVE CSS BELOW*/
 
 @media only screen and (max-width: 1000px) {
-  .text {font-size: 10px}
+  .text {font-size: 20px}
   .SlideImage {height:175px; width:400px;}
 }
 
@@ -181,9 +200,11 @@ body {font-family: Verdana,sans-serif;}
 @media only screen and (max-width: 500px) {
   .text {font-size: 10px}
   .SlideImage {height:175px; width:200px;}
-   label {font-size:15px;}
-   .WelcomeHeader{font-size:17px;}
-   .TabContent{font-size:15px;}
+  label {font-size:15px;}
+  .WelcomeHeader{font-size:17px;}
+  .TabContent{font-size:15px;}
+  .TabContent h1{font-size: 10px;}
+  .LoginButton {font-size:10px;}
 }
 
 

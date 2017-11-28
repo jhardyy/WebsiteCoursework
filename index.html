@@ -15,71 +15,84 @@
             <a href="Login.html" type="Button" class="LoginButton">Login</a>
         </div>
 
-            <div class="MainSection">
+            <section class="MainSection">
        
-            <input id="TabNumber1" type="radio" name="WelcomeTabs" checked>
-            <label for="TabNumber1">Home</label>
-            <input id="TabNumber2" type="radio" name="WelcomeTabs">
-            <label for="TabNumber2">About Us</label>
-            <input id="TabNumber3" type="radio" name="WelcomeTabs">
-            <label for="TabNumber3">Menus</label>
-
-        <hr id="PageSplitter" />
+                <input id="TabNumber1" type="radio" name="WelcomeTabs" checked>
+                <label for="TabNumber1">Home</label>
+                <input id="TabNumber2" type="radio" name="WelcomeTabs">
+                <label for="TabNumber2">About Us</label>
+                <input id="TabNumber3" type="radio" name="WelcomeTabs">
+                <label for="TabNumber3">Menus</label>
+    
+                <hr id="PageSplitter" />
         
-        <section id="Tab1Content" class="TabContent">
-            <header><h1>Welcome to the DMU Restaurant Website</h1></header>
-            <div class="slideshow-container">
+                <section id="Tab1Content" class="TabContent">
+                    <header class="TabHeaders"><h1>Welcome to the DMU Restaurant Website</h1></header>
+                    <section class="slideshow-container">
 
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img class="SlideImage" src="Picture1.jpg">
-                    <div class="text">Caption Text</div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                                <img class="SlideImage" src="Picture1.jpg">
+                            <div class="text">Caption Text</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                                <img class="SlideImage" src="Picture2.jpg">
+                            <div class="text">Caption Two</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                                <img class="SlideImage" src="Picture3.jpg">
+                            <div class="text">Caption Three</div>
+                        </div>
+                </section>
+
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <img class="SlideImage" src="Picture2.jpg">
-                    <div class="text">Caption Two</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <img class="SlideImage" src="Picture3.jpg">
-                    <div class="text">Caption Three</div>
-                </div>
-            </div>
-
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
             </section>
         
 
 
-        <section id="Tab2Content" class="TabContent">
-            <header><h1>About us</h1></header>
-            <p>The Dmu Restaurant is a new restaurant that serves the staff and students with high quality meals.</p>
-            <div style="padding-left:200px;">
-                <iframe class="GoogleMapAPI" frameborder="0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVzYNwmgOcfTMtxFheyYqx3m9Qf3Z8Bss&q=De+Montfort+University" allowfullscreen>
-                </iframe>
-            </div>
+            <section id="Tab2Content" class="TabContent">
+                <header class="TabHeaders"><h1>About us</h1></header>
+                <div class="AboutUsTab"> 
+                    <p>The Dmu Restaurant is a new restaurant that serves the staff and students with high quality meals. <br /> <br />
+                    Independently owned and passionately operated, The DMU restaurant offers the luxury of modern British & International cuisine with fine wines and a bespoke service to compliment at an affordable price. We combine unique food and drink, great location with expressive décor, local artistry and provide a consistent high level of exceptional guest service to deliver an extraordinary experience for all occasions.</p>
+                </div>
+            
+                <div style="padding-left:200px;">
+                    <iframe class="GoogleMapAPI" frameborder="0"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVzYNwmgOcfTMtxFheyYqx3m9Qf3Z8Bss&q=De+Montfort+University" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+
+
+
+            <section id="Tab3Content" class="TabContent">
+                <header class="TabHeaders"><h1>Menus</h1></header>
+                <nav>
+                    <a href="ChristmasMenu.html" type="Button" class="MenuButton">Christmas Menu</a>
+                    <a href="ALaCarte.html" type="Button" class="MenuButton">A La Carte Menu</a>
+                </nav>
+            </section>
+
+
         </section>
-
-
-        <section id="Tab3Content" class="TabContent">
-            <header><h1>Menus</h1></header>
-            <nav>
-                <a href="ChristmasMenu.html" type="Button" class="MenuButton">Christmas Menu</a>
-                <a href="ALaCarte.html" type="Button" class="MenuButton">A La Carte Menu</a>
-            </nav>
-        </section>
-
-    </div>
    
+    
+
+
 <script type="text/javascript" language="javascript" src="JS/MainTabSlideShow.js"></script>
+
+<footer class="PageFooter"></footer>
 </body>
 
 </html>
+
