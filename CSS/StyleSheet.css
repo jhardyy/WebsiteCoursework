@@ -45,8 +45,7 @@ label:hover {
     height: auto;
     float:left;
     max-width: 99%;
-    padding-bottom:8px;
-   
+    padding-bottom:8px; 
 }
 
 .ImageContainer {
@@ -114,16 +113,16 @@ a:hover {
 
 .GoogleMapAPI {
     position:relative;
-    width:300px;
-    height:250px;
-
+    width:250px;
+    height:200px;
+    border:2px solid black;
 }
 
 
 /* Slideshow container */
 * {box-sizing:border-box}
 body {font-family: Verdana,sans-serif;}
-.mySlides {display:none}
+
 
 
 .slideshow-container {
@@ -205,9 +204,9 @@ body {font-family: Verdana,sans-serif;}
   label {display:block; font-size:20px;}
   .WelcomeHeader{font-size:30px;}
   .TabContent{font-size:15px;}
-  .TabContent h1{font-size: 20px;}
+  .TabHeaders{font-size: 20px;}
   .LoginButton {font-size:20px;}
-  
+  .GoogleMapAPI {width:300px; height:250px;}
 }
 
 @media only screen and (min-width: 750px) {
@@ -215,8 +214,9 @@ body {font-family: Verdana,sans-serif;}
   .SlideImage {height:400px; width:600px;}
   label {display:block; font-size:25px;}
   .WelcomeHeader{font-size:35px;}
-  .TabContent h1{font-size: 20px;}
+  .TabHeaders{font-size: 20px;}
   .TabContent{font-size:15px;}
+  .GoogleMapAPI {width:400px; height:300px;}
 }
 
 @media only screen and (min-width: 1000px) {
@@ -224,9 +224,9 @@ body {font-family: Verdana,sans-serif;}
   .SlideImage {height:450px; width:700px;}
   label {display:block; font-size:30px;}
   .WelcomeHeader{font-size:40px;}
-  .TabContent h1{font-size: 25px;}
+  .TabHeaders{font-size: 25px;}
   .TabContent{font-size:20px;}
-  .GoogleMapAPI {width:500px; height:450px;}
+  .GoogleMapAPI {width:600px; height:450px;}
 }
 
 @media only screen and (min-width: 1300px) {
@@ -234,9 +234,9 @@ body {font-family: Verdana,sans-serif;}
   .SlideImage {height:450px; width:700px;}
   label {display:block; font-size:30px;}
   .WelcomeHeader{font-size:45px;}
-  .TabContent h1{font-size: 30px;}
+  .TabHeaders{font-size: 30px;}
   .TabContent{font-size:20px;}
-  .GoogleMapAPI {width:600px; height:450px;}
+  .GoogleMapAPI {width:650px; height:450px;}
 }
 
 

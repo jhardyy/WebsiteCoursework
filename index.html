@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>DMU Restaurant</title>
 	<meta charset="utf-8" />
@@ -12,62 +12,64 @@
         <div class="ImageContainer">
             <img class="Image" src="Headerfood.png" alt="Food">
             <h1 class="WelcomeHeader">DMU Restaurant</h1>
-            <a href="Login.html" type="Button" class="LoginButton">Login</a>
+            <a href="Login.html" class="LoginButton">Login</a>
         </div>
 
             <section class="MainSection">
-       
-                <input id="TabNumber1" type="radio" name="WelcomeTabs" checked>
-                <label for="TabNumber1">Home</label>
-                <input id="TabNumber2" type="radio" name="WelcomeTabs">
-                <label for="TabNumber2">About Us</label>
-                <input id="TabNumber3" type="radio" name="WelcomeTabs">
-                <label for="TabNumber3">Menus</label>
+                
+                    <input id="TabNumber1" type="radio" name="WelcomeTabs" checked>
+                    <label for="TabNumber1">Home</label>
+                    <input id="TabNumber2" type="radio" name="WelcomeTabs">
+                    <label for="TabNumber2">About Us</label>
+                    <input id="TabNumber3" type="radio" name="WelcomeTabs">
+                    <label for="TabNumber3">Menus</label>
+                
     
                 <hr id="PageSplitter" />
         
                 <section id="Tab1Content" class="TabContent">
-                    <header class="TabHeaders"><h1>Welcome to the DMU Restaurant Website</h1></header>
+                    <h2 class="TabHeaders">Welcome to the DMU Restaurant Website</h2>
                     <section class="slideshow-container">
+                        <h3>Pictures</h3>
 
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 3</div>
-                                <img class="SlideImage" src="Picture1.jpg">
+                                <img class="SlideImage" src="Picture1.jpg" alt="Food">
                             <div class="text">Caption Text</div>
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">2 / 3</div>
-                                <img class="SlideImage" src="Picture2.jpg">
+                                <img class="SlideImage" src="Picture2.jpg" alt="Food">
                             <div class="text">Caption Two</div>
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">3 / 3</div>
-                                <img class="SlideImage" src="Picture3.jpg">
+                                <img class="SlideImage" src="Picture3.jpg" alt="Food">
                             <div class="text">Caption Three</div>
                         </div>
-                </section>
+                    </section>
 
-                <div class="DotContainer">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </section>
+                    <div class="DotContainer">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </section>
         
 
 
             <section id="Tab2Content" class="TabContent">
-                <header class="TabHeaders"><h1>About us</h1></header>
+                <h2 class="TabHeaders">About Us</h2>
                 <div class="AboutUsTab"> 
                     <p>The Dmu Restaurant is a new restaurant that serves the staff and students with high quality meals. <br /> <br />
                     Independently owned and passionately operated, The DMU restaurant offers the luxury of modern British & International cuisine with fine wines and a bespoke service to compliment at an affordable price. We combine unique food and drink, great location with expressive décor, local artistry and provide a consistent high level of exceptional guest service to deliver an extraordinary experience for all occasions.</p>
                 </div>
           
                 <div>
-                    <iframe class="GoogleMapAPI" frameborder="0"
-                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDVzYNwmgOcfTMtxFheyYqx3m9Qf3Z8Bss&q=De+Montfort+University" allowfullscreen>
+                    <iframe id="map" class="GoogleMapAPI"
+                            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJzfd3w8_deUgRed0fxPyeHNk&key=AIzaSyDVzYNwmgOcfTMtxFheyYqx3m9Qf3Z8Bss" allowfullscreen>                 
                     </iframe>
                 </div>
             </section>
@@ -76,10 +78,10 @@
 
 
             <section id="Tab3Content" class="TabContent">
-                <header class="TabHeaders"><h1>Menus</h1></header>
+                <h2 class="TabHeaders">Menus</h2>
                 <nav>
-                    <a href="ChristmasMenu.html" type="Button" class="MenuButton">Christmas Menu</a>
-                    <a href="ALaCarte.html" type="Button" class="MenuButton">A La Carte Menu</a>
+                    <a href="ChristmasMenu.html" class="MenuButton">Christmas Menu</a>
+                    <a href="ALaCarte.html" class="MenuButton">A La Carte Menu</a>
                 </nav>
                 <div>
                     <p>filler text filler text filler text filler text filler text filler text filler text filler text filler text filler text filler text</p>
@@ -106,7 +108,8 @@
     
 
 
-<script type="text/javascript" language="javascript" src="JS/MainTabSlideShow.js"></script>
+<script src="JS/MainTabSlideShow.js"></script>
+<script src="JS/GoogleMapApi.js"></script>
 
 <footer class="PageFooter"></footer>
 </body>
