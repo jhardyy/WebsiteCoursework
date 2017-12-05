@@ -1,6 +1,6 @@
 ﻿body{
     position:absolute;
-    max-width:99%;
+    max-width:100%;
     left: 0px;
     right: 0px;
     background-color:lightblue;
@@ -14,7 +14,7 @@ input,
 }
 
 label {
-  display: inline-block;
+  display:block;
   box-sizing: border-box;
   width: 33%;
   float:left;
@@ -41,11 +41,10 @@ label:hover {
 
 .Image {
     padding-top:10px;
+    position:center;
     width:99%;
     height: auto;
-    float:left;
-    max-width: 99%;
-    padding-bottom:8px; 
+    padding-bottom:4px; 
 }
 
 .ImageContainer {
@@ -67,9 +66,16 @@ label:hover {
 
 .LoginButton {
     position:absolute;
-    top:8px;
+    background-color:blue;
+    color:white;
+    top:20px;
     right:20px;
+    width:20px;
+    height:20px;
     font-size:10px;
+    display:inline;
+    text-align:center;
+    
 }
 a:hover {
     color:black;
@@ -87,7 +93,6 @@ a:hover {
 #PageSplitter {
     border:solid;
     border-color:cornflowerblue;
-    border-width:3px;
     position:relative;
     width:98%;
     right:7px;
@@ -122,23 +127,22 @@ a:hover {
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 5px 5px;
+    margin: 4px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
+.PopupLoginButtons{
+    background-color:blue;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: auto;
 }
 
 button:hover {
@@ -164,10 +168,7 @@ button:hover {
     padding: 16px;
 }
 
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
+
 
 /* The Modal (background) */
 .modal {
@@ -185,17 +186,17 @@ span.psw {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.LoginPopUpContent {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
 .close {
     position: absolute;
-    right: 25px;
+    right: 10px;
     top: 0;
     color: #000;
     font-size: 35px;
@@ -315,7 +316,7 @@ body {font-family: Verdana,sans-serif;}
   .WelcomeHeader{font-size:30px;}
   .TabContent{font-size:15px;}
   .TabHeaders{font-size: 20px;}
-  .LoginButton {font-size:20px;}
+  .LoginButton {font-size:10px; width:25px; height:20px;}
   .GoogleMapAPI {width:300px; height:250px;}
 }
 
@@ -326,6 +327,7 @@ body {font-family: Verdana,sans-serif;}
   .WelcomeHeader{font-size:35px;}
   .TabHeaders{font-size: 20px;}
   .TabContent{font-size:15px;}
+  .LoginButton {font-size:20px; width:35px; height:30px;}
   .GoogleMapAPI {width:400px; height:300px;}
 }
 
@@ -336,6 +338,7 @@ body {font-family: Verdana,sans-serif;}
   .WelcomeHeader{font-size:40px;}
   .TabHeaders{font-size: 25px;}
   .TabContent{font-size:20px;}
+  .LoginButton {font-size:25px; width:50px; height:25px;}
   .GoogleMapAPI {width:600px; height:450px;}
 }
 
@@ -346,6 +349,7 @@ body {font-family: Verdana,sans-serif;}
   .WelcomeHeader{font-size:45px;}
   .TabHeaders{font-size: 30px;}
   .TabContent{font-size:20px;}
+  .LoginButton {font-size:30px; width:150px; height:40px;}
   .GoogleMapAPI {width:650px; height:450px;}
 }
 
