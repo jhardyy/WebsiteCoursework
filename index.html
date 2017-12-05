@@ -9,13 +9,33 @@
 <body>
 
     
-        <div class="ImageContainer">
+        <section class="ImageContainer">
             <img class="Image" src="Headerfood.png" alt="Food">
             <h1 class="WelcomeHeader">DMU Restaurant</h1>
-            <a href="Login.html" class="LoginButton">Login</a>
-        </div>
+            <button onclick="document.getElementById('LoginPopUp').style.display = 'block'" style="width:auto;">Login</button>
+            
+
+            <div id="LoginPopUp" class="modal">
+                <form class="modal-content animate" method="get" action=index.html>
+                    <div class="CloseButtonContainer">
+                        <span onclick="document.getElementById('LoginPopUp').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+
+                    <div class="container">
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                        <button type="submit">Login</button>
+                    </div>
+
+                    <div class="container" style="background-color:cornflowerblue;">
+                        <button type="button" onclick="document.getElementById('LoginPopUp').style.display = 'none'" class="cancelbtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </section>
 
             <section class="MainSection">
+                
                 
                     <input id="TabNumber1" type="radio" name="WelcomeTabs" checked>
                     <label for="TabNumber1">Home</label>
@@ -28,7 +48,9 @@
                 <hr id="PageSplitter" />
         
                 <section id="Tab1Content" class="TabContent">
-                    <h2 class="TabHeaders">Welcome to the DMU Restaurant Website</h2>
+                    <h2 class="TabHeaders" id="greeting">
+                        <script src="JS/Welcome.js"></script>
+                    </h2>
                     <section class="slideshow-container">
                         <h3>Pictures</h3>
 
@@ -109,7 +131,8 @@
 
 
 <script src="JS/MainTabSlideShow.js"></script>
-<script src="JS/GoogleMapApi.js"></script>
+<script src="JS/Login.js"></script>
+
 
 <footer class="PageFooter"></footer>
 </body>
