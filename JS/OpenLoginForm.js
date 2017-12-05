@@ -1,5 +1,5 @@
 ﻿// Get the modal
-var LoginButton = document.getElementById('Login').addEventListener('click', OpenLoginForm);
+var LoginButton = document.getElementById('LoginBtn').addEventListener('click', OpenLoginForm);
 var LoginForm = document.getElementById('LoginPopUp');
 
 function OpenLoginForm() {

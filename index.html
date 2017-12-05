@@ -7,75 +7,77 @@
     <link rel="stylesheet" href="CSS/StyleSheet.css?1422585377" type="text/css" />
 </head>
 <body>
+    <header>Contact us on: 1234 567 8910</header>
 
     
         <section class="ImageContainer">
             <img class="Image" src="Images/Headerfood.png" alt="Food">
             <h1 class="WelcomeHeader">DMU Restaurant</h1>
-            <button id="Login"class="LoginButton">Login</button>
+            <button id="LoginBtn" class="LoginButton">Login</button>
             
 
-            <div id="LoginPopUp" class="LoginForm ">
-                <form class="LoginPopUpContent" method="get" action=index.html>
+            <div id="LoginPopUp" class="LoginPopUpContent ">
+                <form class="LoginForm" method="get" action=index.html>
 
                     <div class="CloseButtonContainer">
-                        <span class="close" title="Close Login Form " id="CloseButton" >&times;</span>   
+                        <span class="close" title="Close Login Form " id="CloseButton">&times;</span>
                     </div>
 
-                    <div class="container">
+
+                    <div class="LoginFormContainer">
                         <input type="text" placeholder="Enter Username" name="username" required>
                         <input type="password" placeholder="Enter Password" required>
-                        <button class="PopupLoginButtons" type="submit">Login</button>    
+                        <br />
+                        <button class="PopupLoginButton" id="LoginFormLoginButton" type="submit">Login</button>
                     </div>
 
-                </form>
+                </form>     
             </div>
         </section>
 
-            <section class="MainSection">
+        <main class="MainSection">
                 
-                
-                    <input id="TabNumber1" type="radio" name="WelcomeTabs" checked>
-                    <label for="TabNumber1">Home</label>
-                    <input id="TabNumber2" type="radio" name="WelcomeTabs">
-                    <label for="TabNumber2">About Us</label>
-                    <input id="TabNumber3" type="radio" name="WelcomeTabs">
-                    <label for="TabNumber3">Menus</label>
+            <input id="TabNumber1" type="radio" name="WelcomeTabs" checked>
+            <label for="TabNumber1">Home</label>
+            <input id="TabNumber2" type="radio" name="WelcomeTabs">
+            <label for="TabNumber2">About Us</label>
+            <input id="TabNumber3" type="radio" name="WelcomeTabs">
+            <label for="TabNumber3">Menus</label>
 
-                <hr id="PageSplitter" />
+            <hr id="PageSplitter" />
         
-                <section id="Tab1Content" class="TabContent">
-                    <h2 class="TabHeaders" id="greeting">
-                        <script src="JS/Welcome.js"></script>
-                    </h2>
-                    <section class="slideshow-container">
-                        <h3>Pictures</h3>
+            <section id="Tab1Content" class="TabContent">
+                <h2 class="TabHeaders" id="greeting">
+                    <script src="JS/Welcome.js"></script>
+                </h2>
+                <section class="slideshow-container">
+                    <h3>Pictures</h3>
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">1 / 3</div>
-                                <img class="SlideImage" src="Images/Picture1.jpg" alt="Food">
-                            <div class="text">Caption Text</div>
-                        </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                            <img class="SlideImage" src="Images/Picture1.jpg" alt="Food">
+                        <div class="text">Caption Text</div>
+                    </div>
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">2 / 3</div>
-                                <img class="SlideImage" src="Images/Picture2.jpg" alt="Food">
-                            <div class="text">Caption Two</div>
-                        </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                            <img class="SlideImage" src="Images/Picture2.jpg" alt="Food">
+                        <div class="text">Caption Two</div>
+                    </div>
 
-                        <div class="mySlides fade">
-                            <div class="numbertext">3 / 3</div>
-                                <img class="SlideImage" src="Images/Picture3.jpg" alt="Food">
-                            <div class="text">Caption Three</div>
-                        </div>
-                    </section>
-
-                    <div class="DotContainer">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                            <img class="SlideImage" src="Images/Picture3.jpg" alt="Food">
+                        <div class="text">Caption Three</div>
                     </div>
                 </section>
+
+                <div class="DotContainer">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </section>
         
 
 
@@ -122,7 +124,7 @@
                 </div>
             </section>
 
-        </section>
+        </main>
    
     
 
