@@ -161,7 +161,7 @@ button:hover {
 }
 
 /* The Modal (background) */
-.modal {
+.LoginForm {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -185,7 +185,6 @@ button:hover {
 
 /* The Close Button (x) */
 .close {
-    display:none;
     position: absolute;
     right: 10px;
     top: 0;

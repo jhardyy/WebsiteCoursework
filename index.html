@@ -12,15 +12,14 @@
         <section class="ImageContainer">
             <img class="Image" src="Images/Headerfood.png" alt="Food">
             <h1 class="WelcomeHeader">DMU Restaurant</h1>
-            <button class="LoginButton" onclick="document.getElementById('LoginPopUp').style.display = 'block'">Login</button>
+            <button id="Login"class="LoginButton" onclick="document.getElementById('LoginPopUp').style.display = 'block'">Login</button>
             
 
-            <div id="LoginPopUp" class="modal">
+            <div id="LoginPopUp" class="LoginForm ">
                 <form class="LoginPopUpContent" method="get" action=index.html>
 
                     <div class="CloseButtonContainer">
-                        <span class="close" title="Close Modal">&times;</span>
-                        
+                        <span class="close" title="Close Login Form " id="CloseButton" >&times;</span>   
                     </div>
 
                     <div class="container">
@@ -129,7 +128,7 @@
 
 
 <script src="JS/MainTabSlideShow.js"></script>
-<script src="JS/Login.js"></script>
+<script src="JS/CloseLoginForm.js"></script>
 
 
 <footer class="PageFooter"></footer>
