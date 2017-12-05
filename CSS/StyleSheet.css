@@ -185,6 +185,7 @@ button:hover {
 
 /* The Close Button (x) */
 .close {
+    display:none;
     position: absolute;
     right: 10px;
     top: 0;

@@ -1,10 +1,12 @@
 ﻿// Get the modal
-var modal = document.getElementById('LoginPopUp');
+var modal = document.getElementById('LoginPopUp')
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', CloseWindow);
+
+function CloseWindow(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
+
 
