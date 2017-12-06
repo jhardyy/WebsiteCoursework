@@ -110,11 +110,10 @@ a.LoginButton:link{
 
 #PageSplitter {
     border:solid;
+    text-align:center;
     border-color:cornflowerblue;
     position:relative;
-    width:98%;
-    right:7px;
-    
+    width:100%;
 }
 
 .TabContent {  
@@ -122,6 +121,10 @@ a.LoginButton:link{
 }
 
 .TabHeaders {
+    font-size:15px;
+}
+
+.PictureHeading {
     font-size:10px;
 }
 
@@ -231,7 +234,7 @@ body {font-family: Verdana,sans-serif;}
     width:100%;
 }
 
-.mySlides {
+.SlideImageContainer {
     text-align:center;
 }
 
@@ -243,22 +246,21 @@ body {font-family: Verdana,sans-serif;}
 
 /* Caption text */
 .text {
-  color:black;
   font-size: 10px;
-  position: absolute;
-  padding-top:20px;
-  text-align:center;
+  padding: 8px 12px;
+  position: relative;
+  top:0;
+  width: 100%;
+  text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 10px;
-  right:80px;
-  top:30px;
-  padding: 8px 12px;
-  padding-left:30px;
-  position: relative;
+    color: #f2f2f2;
+    font-size: 10px;
+    padding: 8px 12px;
+    padding-left: 30px;
+    position: relative;
 }
 
 /* The 3 dots at the bottom of the image. */
@@ -274,12 +276,8 @@ body {font-family: Verdana,sans-serif;}
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  margin-bottom:15px;
-}
-
-
-.active {
-  background-color: #717171;
+  
+  
 }
 
 /* Fading animation */
@@ -302,9 +300,9 @@ body {font-family: Verdana,sans-serif;}
 
  /* RESPONSIVE CSS BELOW*/
    /* On smaller screens, decrease text size    */
-@media only screen and (min-width: 468px) {
-  .text {font-size: 20px}
-  .SlideImage {height:200px; width:400px;}
+@media only screen and (min-width: 350px) {
+  .text {font-size: 15px}
+  .SlideImage {height:225px; width:270px;}
   .Navlabel {display:block; font-size:20px;}
   .WelcomeHeader{font-size:30px;}
   .TabContent{font-size:15px;}
@@ -315,9 +313,26 @@ body {font-family: Verdana,sans-serif;}
   input[type=text], input[type=password] {font-size:15px;}
 }
 
+@media only screen and (min-width: 500px) {
+  .text {font-size: 15px;}
+  .SlideImage {height:250px; width:300px;}
+  .SlideImageContainer{ float:left;}
+  .DotContainer{display:block; max-width:300px;}
+  .Navlabel {display:block; font-size:25px;}
+  .WelcomeHeader{font-size:35px;}
+  .TabHeaders{font-size: 20px;}
+  .TabContent{font-size:15px;}
+  .LoginButton {font-size:20px; width:60px; height:40px;}
+  .LogoutButton {font-size:20px; width:60px; height:40px;}
+  .GoogleMapAPI {width:400px; height:300px;}
+  input[type=text], input[type=password] {font-size:20px;}
+}
+
 @media only screen and (min-width: 750px) {
-  .text {font-size: 30px}
-  .SlideImage {height:400px; width:600px;}
+  .text {font-size: 20px}
+  .SlideImage {height:300px; width:400px;}
+  .SlideImageContainer{ float:left;}
+  .DotContainer{display:block; max-width:400px;}
   .Navlabel {display:block; font-size:25px;}
   .WelcomeHeader{font-size:35px;}
   .TabHeaders{font-size: 20px;}
@@ -329,8 +344,10 @@ body {font-family: Verdana,sans-serif;}
 }
 
 @media only screen and (min-width: 1000px) {
-  .text {font-size: 40px}
+  .text {font-size: 25px}
   .SlideImage {height:450px; width:700px;}
+  .SlideImageContainer{ float:left;}
+  .DotContainer{display:block; max-width:700px;}
   .Navlabel {display:block; font-size:30px;}
   .WelcomeHeader{font-size:40px;}
   .TabHeaders{font-size: 25px;}
@@ -342,8 +359,10 @@ body {font-family: Verdana,sans-serif;}
 }
 
 @media only screen and (min-width: 1300px) {
-  .text {font-size: 40px}
-  .SlideImage {height:450px; width:700px;}
+  .text {font-size:30px; padding-right:200px;}
+  .SlideImage {height:550px; width:800px;}
+  .SlideImageContainer{float:left; padding-left:100px;}
+  .DotContainer{display:block; max-width:700px;}
   .Navlabel {display:block; font-size:30px;}
   .WelcomeHeader{font-size:45px;}
   .TabHeaders{font-size: 30px;}
