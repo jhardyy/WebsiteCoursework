@@ -1,5 +1,4 @@
 ﻿body{
-    position:absolute;
     max-width:100%;
     left: 0px;
     right: 0px;
@@ -60,8 +59,9 @@ input,
 .WelcomeHeader {
     position:absolute;
     top:8px;
-    left:20px;
+    left:5px;
     font-size:20px;
+    display:inline;
 }
 
 .LoginButton {
@@ -69,34 +69,38 @@ input,
     background-color:blue;
     color:white;
     top:10px;
-    right:20px;
+    right:10px;
     width:40px;
     height:20px;
     font-size:10px;
     display:inline;
     text-align:center;
+    border:solid 1px grey;
+}
+/*DOESNT SEEM TO WORK???*/
+a.LoginButton:link{
+    text-decoration:none;
 }
 
 .LogoutButton {
     position:absolute;
     background-color:blue;
     color:white;
-    top:40px;
-    right:20px;
+    top:32px;
+    right:10px;
     width:40px;
     height:20px;
     font-size:9px;
     display:none;
     text-align:center;
+    border:solid 1px grey;
 }
-#LoginBtn:hover {
+.LoginButton:hover , .LogoutButton:hover {
     opacity: 0.8;
 }
 
-
-
 .MainSection {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom:50px;
     padding-left:2px;
     margin: auto;
@@ -113,8 +117,7 @@ input,
     
 }
 
-.TabContent {
-    float:left;
+.TabContent {  
     font-size:inherit;
 }
 
@@ -132,7 +135,7 @@ input,
 
 .GoogleMapAPI {
     position:relative;
-    width:250px;
+    width:200px;
     height:200px;
     border:2px solid black;
 }
@@ -218,7 +221,6 @@ input[type=text], input[type=password] {
 .CloseButtonContainer{
     margin: 0 0 12px 0;
     position: relative;
-    
 }
    
 
@@ -228,32 +230,31 @@ input[type=text], input[type=password] {
 
 
 /* Slideshow container */
-* {box-sizing:border-box}
+
 body {font-family: Verdana,sans-serif;}
 
-
+*{box-sizing:border-box}
 
 .slideshow-container {
     width:100%;
-    position:center;
-    margin: auto;
+}
+
+.mySlides {
+    text-align:center;
 }
 
 .SlideImage {
     height:175px;
     max-width: 100%;
-    width:200px; 
+    width:200px;
 }
 
 /* Caption text */
 .text {
-    
-  color: #f2f2f2;
+  color:black;
   font-size: 10px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
-  text-align: center;
 }
 
 /* Number text (1/3 etc) */
@@ -261,6 +262,7 @@ body {font-family: Verdana,sans-serif;}
   color: #f2f2f2;
   font-size: 10px;
   padding: 8px 12px;
+  padding-left:30px;
   position: absolute;
   
 }
@@ -278,6 +280,7 @@ body {font-family: Verdana,sans-serif;}
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  margin-bottom:10px;
 }
 
 
