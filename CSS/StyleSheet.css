@@ -13,7 +13,7 @@ input,
   clear: both;
 }
 
-label {
+.Navlabel {
   display:block;
   box-sizing: border-box;
   width: 33%;
@@ -27,7 +27,7 @@ label {
   border-left: 3px #d9dee2 solid;
 }
 
-label:hover {
+.Navlabel:hover {
     color:black;
 }
 
@@ -308,7 +308,7 @@ body {font-family: Verdana,sans-serif;}
 @media only screen and (min-width: 468px) {
   .text {font-size: 20px}
   .SlideImage {height:200px; width:400px;}
-  label {display:block; font-size:20px;}
+  .Navlabel {display:block; font-size:20px;}
   .WelcomeHeader{font-size:30px;}
   .TabContent{font-size:15px;}
   .TabHeaders{font-size: 20px;}
@@ -321,7 +321,7 @@ body {font-family: Verdana,sans-serif;}
 @media only screen and (min-width: 750px) {
   .text {font-size: 30px}
   .SlideImage {height:400px; width:600px;}
-  label {display:block; font-size:25px;}
+  .Navlabel {display:block; font-size:25px;}
   .WelcomeHeader{font-size:35px;}
   .TabHeaders{font-size: 20px;}
   .TabContent{font-size:15px;}
@@ -334,7 +334,7 @@ body {font-family: Verdana,sans-serif;}
 @media only screen and (min-width: 1000px) {
   .text {font-size: 40px}
   .SlideImage {height:450px; width:700px;}
-  label {display:block; font-size:30px;}
+  .Navlabel {display:block; font-size:30px;}
   .WelcomeHeader{font-size:40px;}
   .TabHeaders{font-size: 25px;}
   .TabContent{font-size:20px;}
@@ -347,7 +347,7 @@ body {font-family: Verdana,sans-serif;}
 @media only screen and (min-width: 1300px) {
   .text {font-size: 40px}
   .SlideImage {height:450px; width:700px;}
-  label {display:block; font-size:30px;}
+  .Navlabel {display:block; font-size:30px;}
   .WelcomeHeader{font-size:45px;}
   .TabHeaders{font-size: 30px;}
   .TabContent{font-size:20px;}

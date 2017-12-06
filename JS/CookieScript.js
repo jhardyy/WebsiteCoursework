@@ -34,7 +34,7 @@ function checkCookie(User) {
         alert("Thank you for logging in  " + CookieValueHolder);
         setCookie('Username', CookieValueHolder, 30);
         checkCookie();
-    
+    //}
           }
     }
 
