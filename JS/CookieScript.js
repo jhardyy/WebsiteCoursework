@@ -29,7 +29,7 @@ function checkCookie(User) {
         
         // if (User != "" && User != null) {
 
-        var plsbecookie = document.getElementById('cookietest').value;
+        var plsbecookie = document.getElementById('UsernameHolder').value;
         alert("cookie has been set");
         setCookie('Username', plsbecookie, 30);
         checkCookie();

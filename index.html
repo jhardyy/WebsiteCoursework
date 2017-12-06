@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="CSS/StyleSheet.css?1422585377" type="text/css" />
 </head>
 <body>
-    <header>Contact us on: 1234 567 8910</header>
+    <header>Welcome<span id="Username">Unknown User</span></header>
 
     
         <section class="ImageContainer">
@@ -25,10 +25,10 @@
 
 
                     <div class="LoginFormContainer">
-                        <input type="text" placeholder="Enter Username" id="UsernameHolder" name="username" required />
+                        <input type="text" placeholder="Enter Username" id="UsernameHolder" name="Username" required />
                         <input type="password" placeholder="Enter Password" required />
                         <br />
-                        <button class="PopupLoginButton" id="LoginFormLoginButton" type="submit">Login</button>
+                        <button class="PopupLoginButton" id="LoginFormLoginButton" type="submit" onclick="checkCookie()">Login</button>
                     </div>
 
                 </form>     
@@ -132,6 +132,7 @@
 <script src="JS/MainTabSlideShow.js"></script>
 <script src="JS/CloseLoginForm.js"></script>
 <script src="JS/OpenLoginForm.js"></script>
+<script src="JS/CookieScript.js"></script>
 
 
 <footer class="PageFooter"></footer>
