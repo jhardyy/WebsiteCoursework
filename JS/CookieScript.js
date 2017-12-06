@@ -1,12 +1,12 @@
-﻿function setCookie(cname, cvalue, exdays) {
+﻿function setCookie(CookieName, CookieValue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     var expires = "expires=" + d.toGMTString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = CookieName + "=" + CookieValue + ";" + expires + ";path=/";
 }
 
-function getCookie(cname) {
-    var name = cname + "=";
+function getCookie(CookieName) {
+    var name = CookieName + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
     for (var i = 0; i < ca.length; i++) {
@@ -25,21 +25,25 @@ function checkCookie(User) {
     var User = getCookie("Username");
     if (User != "") {
         PerformGreeting(User);
-    } else {
-        
-        // if (User != "" && User != null) {
-
-        var plsbecookie = document.getElementById('UsernameHolder').value;
-        alert("cookie has been set");
-        setCookie('Username', plsbecookie, 30);
-        checkCookie();
-        //  }
     }
-}
+    else {
+
+        //if (User != "" && User != null) {
+
+        var CookieValueHolder = document.getElementById('UsernameHolder').value;
+        alert("Thank you for logging in  " + CookieValueHolder);
+        setCookie('Username', CookieValueHolder, 30);
+        checkCookie();
+    
+          }
+    }
+
+
+document.getElementById('LogoutBtn').addEventListener('click', deleteCookie)
 
 function deleteCookie(name) {
     document.cookie = "Username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    alert("cookie has been deleted");
+    alert("You have Logged out");
 }
 
 function PerformGreeting(User) {

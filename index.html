@@ -5,15 +5,18 @@
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/StyleSheet.css?1422585377" type="text/css" />
+    
+    
 </head>
 <body>
-    <header>Welcome<span id="Username">Unknown User</span></header>
+    <header>Welcome   <span id="Username">User</span></header>
 
     
         <section class="ImageContainer">
             <img class="Image" src="Images/Headerfood.png" alt="Food">
             <h1 class="WelcomeHeader">DMU Restaurant</h1>
             <button id="LoginBtn" class="LoginButton">Login</button>
+            <a href="index.html" id="LogoutBtn" class="LogoutButton">Logout</a>
             
 
             <div id="LoginPopUp" class="LoginPopUpContent ">
@@ -28,7 +31,7 @@
                         <input type="text" placeholder="Enter Username" id="UsernameHolder" name="Username" required />
                         <input type="password" placeholder="Enter Password" required />
                         <br />
-                        <button class="PopupLoginButton" id="LoginFormLoginButton" type="submit" onclick="checkCookie()">Login</button>
+                        <button class="PopupLoginButton" id="LoginFormLoginButton" type="submit">Login</button>
                     </div>
 
                 </form>     
@@ -88,7 +91,7 @@
                     Independently owned and passionately operated, The DMU restaurant offers the luxury of modern British & International cuisine with fine wines and a bespoke service to compliment at an affordable price. We combine unique food and drink, great location with expressive décor, local artistry and provide a consistent high level of exceptional guest service to deliver an extraordinary experience for all occasions.</p>
                 </div>
           
-                <div>
+                <div class="GoogleMapAPIContainer">
                     <iframe id="map" class="GoogleMapAPI"
                             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJzfd3w8_deUgRed0fxPyeHNk&key=AIzaSyDVzYNwmgOcfTMtxFheyYqx3m9Qf3Z8Bss" allowfullscreen>                 
                     </iframe>
@@ -127,12 +130,13 @@
         </main>
    
     
-
-
+<script src="JS/CookieScript.js"></script>
 <script src="JS/MainTabSlideShow.js"></script>
 <script src="JS/CloseLoginForm.js"></script>
 <script src="JS/OpenLoginForm.js"></script>
-<script src="JS/CookieScript.js"></script>
+<script src="JS/ClosingLoginFormByLoggingIn.js"></script>
+
+
 
 
 <footer class="PageFooter"></footer>
