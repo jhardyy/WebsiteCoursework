@@ -259,7 +259,8 @@ body {font-family: Verdana,sans-serif;}
     color: #f2f2f2;
     font-size: 10px;
     padding: 8px 12px;
-    padding-left: 30px;
+    top:30px;
+    padding-left: 60px;
     position: relative;
 }
 
@@ -302,11 +303,13 @@ body {font-family: Verdana,sans-serif;}
    /* On smaller screens, decrease text size    */
 @media only screen and (min-width: 350px) {
   .text {font-size: 15px}
+  .numbertext{padding-left:100px;}
   .SlideImage {height:225px; width:270px;}
   .Navlabel {display:block; font-size:20px;}
   .WelcomeHeader{font-size:30px;}
   .TabContent{font-size:15px;}
   .TabHeaders{font-size: 20px;}
+  .PictureHeading{font-size:15px;}
   .LoginButton {font-size:10px; width:40px; height:30px;}
   .LogoutButton {font-size:10px; width:40px; height:30px;}
   .GoogleMapAPI {width:300px; height:250px;}
@@ -314,14 +317,16 @@ body {font-family: Verdana,sans-serif;}
 }
 
 @media only screen and (min-width: 500px) {
-  .text {font-size: 15px;}
+  .text {font-size: 15px; padding-top:30px;  max-width:475px; text-align:center;}
+  .numbertext{padding-left: 60px;}
   .SlideImage {height:250px; width:300px;}
   .SlideImageContainer{ float:left;}
   .DotContainer{display:block; max-width:300px;}
   .Navlabel {display:block; font-size:25px;}
   .WelcomeHeader{font-size:35px;}
-  .TabHeaders{font-size: 20px;}
-  .TabContent{font-size:15px;}
+  .TabHeaders{font-size: 25px;}
+  .TabContent{font-size:20px;}
+  .PictureHeading{font-size:20px;}
   .LoginButton {font-size:20px; width:60px; height:40px;}
   .LogoutButton {font-size:20px; width:60px; height:40px;}
   .GoogleMapAPI {width:400px; height:300px;}
@@ -329,14 +334,16 @@ body {font-family: Verdana,sans-serif;}
 }
 
 @media only screen and (min-width: 750px) {
-  .text {font-size: 20px}
-  .SlideImage {height:300px; width:400px;}
+  .text {font-size: 20px; padding-top:30px;  max-width:650px; text-align:center;}
+  .numbertext{padding-left: 60px;}
+  .SlideImage {height:350px; width:450px;}
   .SlideImageContainer{ float:left;}
-  .DotContainer{display:block; max-width:400px;}
+  .DotContainer{display:block; max-width:420px;}
   .Navlabel {display:block; font-size:25px;}
   .WelcomeHeader{font-size:35px;}
-  .TabHeaders{font-size: 20px;}
-  .TabContent{font-size:15px;}
+  .TabHeaders{font-size: 30px;}
+  .TabContent{font-size:25px;}
+  .PictureHeading{font-size:25px;}
   .LoginButton {font-size:20px; width:60px; height:40px;}
   .LogoutButton {font-size:20px; width:60px; height:40px;}
   .GoogleMapAPI {width:400px; height:300px;}
@@ -344,14 +351,16 @@ body {font-family: Verdana,sans-serif;}
 }
 
 @media only screen and (min-width: 1000px) {
-  .text {font-size: 25px}
-  .SlideImage {height:450px; width:700px;}
+  .text {font-size: 25px; padding-top:30px;  max-width:900px; text-align:center;}
+  .numbertext{padding-left: 100px;}
+  .SlideImage {height:450px; width:650px;}
   .SlideImageContainer{ float:left;}
-  .DotContainer{display:block; max-width:700px;}
+  .DotContainer{display:block; max-width:600px;}
   .Navlabel {display:block; font-size:30px;}
   .WelcomeHeader{font-size:40px;}
-  .TabHeaders{font-size: 25px;}
-  .TabContent{font-size:20px;}
+  .TabHeaders{font-size: 35px;}
+  .TabContent{font-size:30px;}
+  .PictureHeading{font-size:30px;}
   .LoginButton {font-size:25px; width:100px; height:60px;}
   .LogoutButton {font-size:25px; width:100px; height:60px;}
   .GoogleMapAPI {width:600px; height:450px;}
@@ -359,14 +368,15 @@ body {font-family: Verdana,sans-serif;}
 }
 
 @media only screen and (min-width: 1300px) {
-  .text {font-size:30px; padding-right:200px;}
+  .text {font-size: 30px; padding-top:150px;  max-width:1200px; text-align:center;}
   .SlideImage {height:550px; width:800px;}
-  .SlideImageContainer{float:left; padding-left:100px;}
+  .SlideImageContainer{float:left;}
   .DotContainer{display:block; max-width:700px;}
   .Navlabel {display:block; font-size:30px;}
   .WelcomeHeader{font-size:45px;}
-  .TabHeaders{font-size: 30px;}
-  .TabContent{font-size:20px;}
+  .TabHeaders{font-size: 35px;}
+  .TabContent{font-size:30px;}
+  .PictureHeading{font-size:30px;}
   .LoginButton {font-size:30px; width:150px; height:60px;}
   .LogoutButton {font-size:30px; width:150px; height:60px;}
   .GoogleMapAPI {width:650px; height:450px;}
