@@ -11,3 +11,4 @@ if (TheCurrentHour > 18) {
     Greeting = 'Welcome to The DMU Restaurant.';
 }
 document.write(Greeting);
+//use in line html. accessibility checker, user testing 
