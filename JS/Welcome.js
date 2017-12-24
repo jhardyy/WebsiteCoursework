@@ -1,6 +1,7 @@
 ﻿var today = new Date();
 var TheCurrentHour = today.getHours();
 var Greeting;
+var TempHolder;
 if (TheCurrentHour > 18) {
     Greeting = 'Good evening, welcome to The DMU Restaurant.';
 } else if (TheCurrentHour > 12) {
@@ -10,5 +11,7 @@ if (TheCurrentHour > 18) {
 } else {
     Greeting = 'Welcome to The DMU Restaurant.';
 }
-document.write(Greeting);
-//use in line html. accessibility checker, user testing 
+TempHolder = document.getElementById('Username');
+TempHolder.innerHTML = Greeting;
+
+// accessibility checker, user testing 

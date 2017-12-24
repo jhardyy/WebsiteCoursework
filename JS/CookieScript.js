@@ -22,20 +22,15 @@ function getCookie(CookieName) {
 }
 
 function checkCookie(User) {
-    var User = getCookie("Username");
-    if (User != "") {
-        PerformGreeting(User);
+    var CookieValueHolder = document.getElementById('UsernameHolder').value;
+    if (CookieValueHolder == 'UsernameHolder' | CookieValueHolder == "" | CookieValueHolder == null) {
+        alert("Please enter a valid Username");
     }
     else {
-
-        //if (User != "" && User != null) {
-
-        var CookieValueHolder = document.getElementById('UsernameHolder').value;
         alert("Thank you for logging in  " + CookieValueHolder);
         setCookie('Username', CookieValueHolder, 30);
-        checkCookie();
-    //}
-          }
+        PerformGreeting(CookieValueHolder);
+         }
     }
 
 

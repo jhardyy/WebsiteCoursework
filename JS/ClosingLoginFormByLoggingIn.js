@@ -3,11 +3,20 @@ document.getElementById('LoginFormLoginButton').addEventListener('click', CloseL
 var LoginForm = document.getElementById('LoginPopUp')
 var LogoutBtn = document.getElementById('LogoutBtn')
 
+
 function CloseLoginForm() {
     LoginForm.style.display = "none";
-    LogoutBtn.style.display = "inline";    
-    checkCookie();
+    checkCookie(Username);
+    if (document.getElementById('UsernameHolder').value == "" | document.getElementById('UsernameHolder').value == null | document.getElementById('UsernameHolder').value == 'UsernameHolder')
+        LogoutBtn.style.display = "none";
+    else {
+        LogoutBtn.style.display = "inline";
+    }
+
+
 }
+    
+
 
 
 
