@@ -77,10 +77,6 @@ input,
     text-align:center;
     border:solid 1px grey;
 }
-/*DOESNT SEEM TO WORK???*/
-a.LoginButton:link{
-    text-decoration:none;
-}
 
 .LogoutButton {
     position:absolute;
