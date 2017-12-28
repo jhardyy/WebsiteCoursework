@@ -17,12 +17,12 @@
     <header>Welcome   <span id="Username">User</span></header>
         <!-- The section that contains the banner and everything in it-->
         <section class="ImageContainer">
-
+            <!-- -->
             <img class="Image" src="Images/Headerfood.png" alt="Food">
             <h1 class="WelcomeHeader">DMU Restaurant</h1>
             <button id="LoginBtn" class="LoginButton">Login</button>
             <a href="index.html" id="LogoutBtn" class="LogoutButton">Logout</a>
-            
+            <!-- Pop up login form, this is hidden by default.-->
             <div id="LoginPopUp" class="LoginPopUpContent ">
 
                 <form class="LoginForm" method="get" action=index.html>
@@ -52,40 +52,54 @@
         
             <hr id="PageSplitter" />
            
-        
+            <!-- Tab 1, Welcome tab.-->
             <section id="Tab1Content" class="TabContent">
-                <h2 class="TabHeaders" id="greeting">
-                    <script src="JS/Welcome.js"></script>
-                </h2>
+                <!-- JavaScript Greeting Heading-->
+                <h2 class="TabHeaders" id="greeting"></h2>
+                <!-- Section for the HTML code for the image slideshow. The slideshow uses three images in a fixed rotation.-->
                 <section class="slideshow-container">
+                    <!-- Header for the section within tab 1-->
                     <h3 class="PictureHeading">Pictures of example dishes</h3>
-
+                    <!-- A container unit to keep the first image of the slideshow, the caption and number in.-->
                     <div class="mySlides fade">
+                        <!-- A number to show that the slideshow is currently displaying the first image.-->
                         <div class="numbertext">1 / 3</div>
                         <div class="SlideImageContainer">
+                            <!-- Linking to the first image in the slideshow-->
                             <img class="SlideImage" src="Images/Picture1.jpg" alt="Food">
                         </div>
+                        <!-- Caption for the first picture.-->
                         <div><p class="text">Delicious cut of hake served in a creamy pawn sauce with peppers and other complimenting vegetables.</p></div>
                     </div>
 
+                    <!-- A container unit to keep the second image of the slideshow, the caption and number in.-->
                     <div class="mySlides fade">
+                        <!-- A number to show that the slideshow is currently displaying the second image.-->
                         <div class="numbertext">2 / 3</div>
                         <div class="SlideImageContainer">
+                            <!-- Linking to the second image in the slideshow-->
                             <img class="SlideImage" src="Images/Picture2.jpg" alt="Food">
                         </div>
+                        <!-- Caption for the second picture.-->
                             <div class="text">A quality Lobster based dish, with chuncks of sea fish. Severed with pasta and green vegetables.</div>
                         </div>
 
+                    <!-- A container unit to keep the thrid image of the slideshow, the caption and number in.-->
                     <div class="mySlides fade">
+                        <!-- A number to show that the slideshow is currently displaying the third image.-->
                         <div class="numbertext">3 / 3</div>
                         <div class="SlideImageContainer">
+                            <!-- Linking to the third image in the slideshow-->
                             <img class="SlideImage" src="Images/Picture3.jpg" alt="Food">
                         </div>
+                        <!-- Caption for the third picture.-->
                             <div class="text">A beautiful 10 oz Fillet steak served with roasted asparagus wrapped in parma ham, baby tomatoes and peppercorn sauce.</div>
                         </div>
                 </section>
 
+                <!-- A container unit that is used to hold the dots that visually show what image the slideshow is currently displaying.-->
                 <div class="DotContainer">
+                    <!-- Each one of these 'dots' represents an image within the slideshow.-->
                     <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -93,15 +107,19 @@
             </section>
         
 
-
+            <!-- Tab 2, About us-->
             <section id="Tab2Content" class="TabContent">
+                <!-- Header for the section within tab 2-->
                 <h2 class="TabHeaders">About Us</h2>
+                <!-- A container unit used to holds a paragraph. This paragrpah explains a little bit about the restaurant to the user.-->
                 <div class="AboutUsTab"> 
                     <p>The Dmu Restaurant is a new restaurant that serves the staff and students with high quality meals. <br /> <br />
                     Independently owned and passionately operated, The DMU restaurant offers the luxury of modern British & International cuisine with fine wines and a bespoke service to compliment at an affordable price. We combine unique food and drink, great location with expressive décor, local artistry and provide a consistent high level of exceptional guest service to deliver an extraordinary experience for all occasions.</p>
                 </div>
-          
+
+                <!-- A container unit that holds the google map API.-->
                 <div class="GoogleMapAPIContainer">
+                    <!-- A inline frame tag is used to display the content of the google API from the source url-->
                     <iframe id="map" class="GoogleMapAPI"
                             src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJzfd3w8_deUgRed0fxPyeHNk&key=AIzaSyDVzYNwmgOcfTMtxFheyYqx3m9Qf3Z8Bss" allowfullscreen>                 
                     </iframe>
@@ -152,6 +170,7 @@
 <script src="JS/CloseLoginForm.js"></script>
 <script src="JS/OpenLoginForm.js"></script>
 <script src="JS/ClosingLoginFormByLoggingIn.js"></script>
+<script src="JS/Welcome.js"></script>
 
 
 <footer class="PageFooter">Contact us on: 1234 567 8910</footer>
