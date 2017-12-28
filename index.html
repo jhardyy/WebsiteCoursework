@@ -1,16 +1,23 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This is the title tag, this shall be shown in the tab when the webpage is open -->
     <title>DMU Restaurant</title>
+    <!-- meta tag to set the character set the website shall use-->
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to the external stylesheet-->
     <link rel="stylesheet" href="CSS/StyleSheet.css?1422585377" type="text/css" />
     
     
 </head>
+<!-- main body tag-->
 <body>
+    <!-- The header for the body element. Also contains the ID used in the greeting and in the cookies.-->
     <header>Welcome   <span id="Username">User</span></header>
+        <!-- The section that contains the banner and everything in it-->
         <section class="ImageContainer">
+
             <img class="Image" src="Images/Headerfood.png" alt="Food">
             <h1 class="WelcomeHeader">DMU Restaurant</h1>
             <button id="LoginBtn" class="LoginButton">Login</button>
@@ -33,9 +40,9 @@
                 </form>     
             </div>
         </section>
-
+    <!-- The main section of the webpage, contains all the different tabs-->
         <main class="MainSection">
-                
+            <!-- The navigation bar-->
             <input id="TabNumber1" type="radio" name="WelcomeTabs" checked>
             <label for="TabNumber1" class="Navlabel">Home</label>
             <input id="TabNumber2" type="radio" name="WelcomeTabs">
