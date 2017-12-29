@@ -52,4 +52,6 @@ I ran my HTML code through the validator and the results are below. I got one wa
 
 ![HTMLValidatorResults](/Images/HTMLValidatorResults.jpg)
 
-I ran my CSS code through the validator and the results are below.
+I ran my CSS code through the validator and the results are below. The three warnings i got given were all to do with the webkit animation being an unknown extension.
+
+![HTMLValidatorResults](/Images/CSSValidatorResults.jpg)
