@@ -1,4 +1,4 @@
-# WebsiteCoursework - DMU Restaurant
+# Website Coursework - DMU Restaurant
 
 ## About the Website
 This website is for a restaurant located on site at DMU university. Located at the very top of the page in the header of the webpage, there is a JavaScript greeting. The greeting changes depending on what time of day the user visits the website. It has a universal banner located at the top of the website that uses a section element as an image container. It also contains a h1 element that acts as a website title.  
@@ -22,6 +22,6 @@ A lot of the elements within the website contain a 'hover' attribute and turn a 
 
 The website is completely responsive and is designed to fit mobile first. The website uses six breakpoints to constantly adjust the sizes of elements to fit to screen.
 
-![Rough Desktop Design](Images/Readme1.jpg)
+![Rough Desktop Design](/Images/Readme1.jpg)
 
-![Rough mobile Design](Images/Readme2.jpg)
+![Rough mobile Design](/Images/Readme2.jpg)
