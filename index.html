@@ -22,19 +22,23 @@
             <h1 class="WelcomeHeader">DMU Restaurant</h1>
             <button id="LoginBtn" class="LoginButton">Login</button>
             <a href="index.html" id="LogoutBtn" class="LogoutButton">Logout</a>
-            <!-- Pop up login form, this is hidden by default.-->
+            <!-- A container unit with the Pop up login form, this is hidden by default.-->
             <div id="LoginPopUp" class="LoginPopUpContent ">
-
+                <!-- The form that is used for the user to login.-->
                 <form class="LoginForm" method="get" action=index.html>
 
+                    <!-- A container unit that contains the 'x' close button for the form. The '&times' is how the button gets the 'x' shape because '&times' is a multiplication sign.-->
                     <div class="CloseButtonContainer">
                         <span class="close" title="Close Login Form " id="CloseButton">&times;</span>
                     </div>
-                    
+                    <!-- A container unit to hold the username and password inputs for the form aswell as the 'login/submit' button.-->
                     <div class="LoginFormContainer">
+                        <!-- A text box for the user to enter their username, before the user has typed anything in the box shall display 'Enter Username'-->
                         <input type="text" placeholder="Enter Username" id="UsernameHolder" name="Username" required />
+                        <!-- A text box for the user to enter their password, before the user has typed anything in the box shall display 'Enter Password'-->
                         <input type="password" placeholder="Enter Password" required />
                         <br />
+                        <!-- The login button for the popup login form-->
                         <button class="PopupLoginButton" id="LoginFormLoginButton" type="submit">Login</button>
                     </div>
                 </form>     
@@ -43,6 +47,7 @@
     <!-- The main section of the webpage, contains all the different tabs-->
         <main class="MainSection">
             <!-- The navigation bar-->
+            <!-- Each input and label is a different tab-->
             <input id="TabNumber1" type="radio" name="WelcomeTabs" checked>
             <label for="TabNumber1" class="Navlabel">Home</label>
             <input id="TabNumber2" type="radio" name="WelcomeTabs">
@@ -128,12 +133,15 @@
 
 
 
-
+            <!-- Tab 3, Menu Tab-->
             <section id="Tab3Content" class="TabContent">
+                <!-- Header for the section within tab 3-->
                 <h2 class="TabHeaders">Menus</h2>
-                
+                <!-- A container unit that holds one of the menus.-->
                 <div class="MenuContainer">
+                    <!-- An unordered list to store the menu items-->
                     <ul>
+                        <!-- Each li tag is a new list item-->
                         <li>Pork</li>
                         <li>Pork</li>
                         <li>Pork</li>
@@ -141,9 +149,11 @@
                         <li>Pork</li>
                     </ul>
                 </div>
-
+                <!-- A container unit that holds one of the menus.-->
                 <div class="MenuContainer">
+                    <!-- An unordered list to store the menu items-->
                     <ul>
+                        <!-- Each li tag is a new list item-->
                         <li>Beef</li>
                         <li>Beef</li>
                         <li>Beef</li>
@@ -151,9 +161,11 @@
                         <li>Beef</li>
                     </ul>
                 </div>
-
+                <!-- A container unit that holds one of the menus.-->
                 <div class="MenuContainer">
+                    <!-- An unordered list to store the menu items-->
                     <ul>
+                        <!-- Each li tag is a new list item-->
                         <li>Fish</li>
                         <li>Fish</li>
                         <li>Fish</li>
@@ -164,7 +176,7 @@
             </section>
         </main>
    
-    
+ <!-- The links to external JavaScript-->
 <script src="JS/CookieScript.js"></script>
 <script src="JS/MainTabSlideShow.js"></script>
 <script src="JS/CloseLoginForm.js"></script>
@@ -172,7 +184,7 @@
 <script src="JS/ClosingLoginFormByLoggingIn.js"></script>
 <script src="JS/Welcome.js"></script>
 
-
+<!-- The footer tag located at the bottom of the page with a contact number-->
 <footer class="PageFooter">Contact us on: 1234 567 8910</footer>
 </body>
 
