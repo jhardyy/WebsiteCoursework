@@ -45,9 +45,11 @@ Below is the rough and simple sketch of the desktop version of the website for b
 ![Rough Desktop Design](/Images/Readme2.jpg)
 
 ## User testing
+Changes after user testing feedback
 
-I got my..
+1. After the feedback from users testing my website it became clear that one issue was that users didn't like how the logout button was on show even if they hadn't logged in. I have changed this so that the logout button would appear only when the user has logged in. Also now when the user clicks the logout button the button is automatically hidden.
 
+2. Another problem that became clear after user feedback was that users struggled to see where their cursor was when selecting options. To fix this issue i have made the three main options: Home, About Us and Menus turn black when the users is hovering over them. I have also made the login and logout buttons change in the same way.
 
 
 ## Validtor Results
@@ -55,6 +57,10 @@ I ran my HTML code through the validator and the results are below. I got one wa
 
 ![HTMLValidatorResults](/Images/HTMLValidatorResults.png)
 
-I ran my CSS code through the validator and the results are below. The three warnings i got given were all to do with the webkit animation being an unknown extension.
+I ran my CSS code through the validator and the results are below. I got no errors however i did get three warnings.These three warnings i got given were all to do with the webkit animation being an unknown extension.
 
 ![HTMLValidatorResults](/Images/CSSValidatorResults.png)
+
+I ran my HTML through an accessibilty checker and the results are shown below. I got 6 known problems, they all relate to the inputs for the username and password on the login form. All 6 errors seen to be pointing out that the inputs for username and password have no text inside them. However, instead I have placeholders inside the text inputs which act in a very similar way.
+
+![HTMLValidatorResults](/Images/AccessibilityValidatorResults.png)
