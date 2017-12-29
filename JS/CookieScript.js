@@ -35,7 +35,7 @@ function checkCookie(User) {
     var User = getCookie("Username");
     if (User != "") {
         //if the CookieValueholders is either UsernameHolder, blank or null then alert the user and tell that that they need to insert a valid username.
-        if (CookieValueHolder == 'UsernameHolder' | CookieValueHolder == "" | CookieValueHolder == null) {
+        if (CookieValueHolder == "" | CookieValueHolder == null) {
             alert("Please enter a valid Username");
         }
             //else, alert the user and thank them for logging in with a personal greeting using the username they just entered.
