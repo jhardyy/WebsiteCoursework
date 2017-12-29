@@ -1,17 +1,28 @@
-﻿body{
+﻿/* CSS for the body of the html page*/
+body{
+    /*Property to set the max width of the body to 100%*/
     max-width:100%;
+    /*Left and right 0px keep the page center*/
     left: 0px;
     right: 0px;
+    /* Background colour Property*/
     background-color:lightblue;
+    /*Sets the font of the body*/
+    font-family: Verdana,sans-serif;
 }
-/* CSS for the single page app using different tabs*/
+/* CSS for the different tabs*/
+
+/*The CSS below applies to every input tag aswell as the class 'TabContent'.*/
 input,
 .TabContent {
+   /*Property to set the display to none making it so the user can't see the element with the class.*/
   display: none;
+  /*Property to give the padding the size of the 1 times the font size.*/
   padding: 1em;
   clear: both;
 }
 
+/*CSS for the navigation labels.*/
 .Navlabel {
   display:block;
   box-sizing: border-box;
@@ -25,7 +36,7 @@ input,
   border-right: 3px #d9dee2 solid;
   border-left: 3px #d9dee2 solid;
 }
-
+/*The hover selector makes the navigation labels text turn black when the cursor is pointed over them.*/
 .Navlabel:hover {
     color:black;
 }
@@ -36,8 +47,9 @@ input,
   display: block;
 }
 
-/* CSS for different classes.*/
+/* CSS for banner at the top of the page.*/
 
+/* This is the CSS for the class 'image'*/
 .Image {
     padding-top:10px;
     position:center;
@@ -46,6 +58,7 @@ input,
     padding-bottom:4px; 
 }
 
+/* This is the CSS for the class 'ImageContainer'*/
 .ImageContainer {
     position:relative;
     text-align: center;
@@ -55,7 +68,7 @@ input,
     height: auto;
     width: auto;
 }
-
+/* This is the CSS for the class 'WelcomeHeader'*/
 .WelcomeHeader {
     position:absolute;
     top:8px;
@@ -64,6 +77,7 @@ input,
     display:inline;
 }
 
+/* This is the CSS for the class 'LoginButton'*/
 .LoginButton {
     position:absolute;
     background-color:blue;
@@ -78,6 +92,7 @@ input,
     border:solid 1px grey;
 }
 
+/* This is the CSS for the class 'LogoutButton'*/
 .LogoutButton {
     position:absolute;
     background-color:blue;
@@ -91,10 +106,14 @@ input,
     text-align:center;
     border:solid 1px grey;
 }
+
+/*The hover selector makes the login and logout buttons go slighty transparent when the cursor is pointed over them.*/
 .LoginButton:hover , .LogoutButton:hover {
     opacity: 0.8;
 }
+/* CSS for the main section of the body*/
 
+/*CSS for the class 'MainSection'*/
 .MainSection {
     padding-top: 10px;
     padding-bottom:50px;
@@ -104,6 +123,7 @@ input,
     font-size:10px;
 }
 
+/*CSS for the element with the class 'PageSplitter'*/
 #PageSplitter {
     border:solid;
     text-align:center;
@@ -112,24 +132,28 @@ input,
     width:100%;
 }
 
+/*CSS for the element with the class 'TabContent'*/
 .TabContent {  
     font-size:inherit;
 }
 
+/*CSS for the element with the class 'TabHeader'*/
 .TabHeaders {
     font-size:15px;
 }
 
+/*CSS for the element with the class 'TabHeader'*/
 .PictureHeading {
     font-size:10px;
 }
 
-
+/*CSS for the element with the class 'MenuContainer'*/
 .MenuContainer {
     width:30%;
     display:inline-block;
 }
 
+/*CSS for the element with the class 'AboutUSTab'*/
 .AboutUsTab {
     font-size:inherit;
     position:relative;
@@ -138,6 +162,7 @@ input,
     height:auto;
 }
 
+/*CSS for the element with the class 'GoogleMapAPI'*/
 .GoogleMapAPI {
     position:relative;
     width:200px;
@@ -145,13 +170,13 @@ input,
     border:2px solid black;
 }
 
+/*CSS for the element with the class 'GoogleMapAPIContainer'*/
 .GoogleMapAPIContainer {
     text-align:center;
 }
 
 
-
-/* Full-width input fields */
+/*CSS for the input types text and password*/
 input[type=text], input[type=password] {
     margin-bottom: 5px;
     display: block;
@@ -162,7 +187,7 @@ input[type=text], input[type=password] {
 }
 
 
-/* Set a style for all buttons */
+/*CSS to set the style for the popuplogin button*/
 .PopupLoginButton{
     background-color:blue;
     color: white;
@@ -175,38 +200,44 @@ input[type=text], input[type=password] {
     position:center;
 }
 
+/*CSS to give the element with the ID LoginFormLoginButton a hover effect, making the text of the button turn black when the cursor is pointing over it. */
 #LoginFormLoginButton:hover {
     background-color:black;
 }
 
+/*CSS for the element with the class 'LoginFormContainer' */
 .LoginFormContainer {
     padding: 16px;
 }
 
-/* The Modal (background) */
+/* CSS for The background of the Pop up login form. */
 .LoginPopUpContent {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    /* Hidden by default */
+    display: none; 
+    /* Makes the Pop up login form stay in place */
+    position: fixed; 
+    /* Makes the Pop up login sit on top of the webpage */
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%;
+    height: 100%;
+    /* Enables the user to scroll on the webpage behind if needed*/
+    overflow: auto; 
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     padding-top: 60px;
 }
 
-/* Modal Content/Box */
+/* CSS for form within the login pop up screen. (class LoginForm) */
 .LoginForm {
     background-color:cornflowerblue;
     margin: 10% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 2px solid #888;
-    width: 60%; /* Could be more or less, depending on screen size */
+    width: 60%;
 }
 
-/* The Close Button (x) */
+/* CSS for The Close Button (x) on the pop up login form. */
 .close {
     position:absolute;
     right:1px;
@@ -216,6 +247,8 @@ input[type=text], input[type=password] {
     z-index: 1;
 }
 
+/*CSS to make the close button red when the cursor is pointing over it.*/
+/*CSS to change the cursor to a pointer when hovering over it*/
 .close:hover,
 .close:focus {
     color: red;
@@ -227,19 +260,18 @@ input[type=text], input[type=password] {
     margin: 0 0 12px 0;
     position: relative;
 }
-  
-/* Slideshow container */
-body {font-family: Verdana,sans-serif;}
-*{box-sizing:border-box}
 
+/* CSS for the element(s) with the class 'slideshow-container' within the image slideshow. */
 .slideshow-container {
     width:100%;
 }
 
+/* CSS for the element(s) with the class 'SlideImageContainer' within the image slideshow. */
 .SlideImageContainer {
     text-align:center;
 }
 
+/* CSS for the 3 different images within the slideshow.*/
 .SlideImage {
     height:175px;
     max-width: 100%;
@@ -247,7 +279,7 @@ body {font-family: Verdana,sans-serif;}
     border:solid 2px black;
 }
 
-/* Caption text */
+/* The CSS for the Caption text for each image */
 .text {
   font-size: 10px;
   padding: 8px 12px;
@@ -258,7 +290,7 @@ body {font-family: Verdana,sans-serif;}
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/* The CSS for the Number text (1/3 etc) on the image */
 .numbertext {
     color: #f2f2f2;
     font-size: 10px;
@@ -268,13 +300,14 @@ body {font-family: Verdana,sans-serif;}
     position: relative;
 }
 
-/* The 3 dots at the bottom of the image. */
+/* The CSS for the 3 dots at the bottom of the image. */
 .DotContainer {
     position:center;
     text-align:center;
     width:100%;
 }
 
+/*CSS to style the dots located just underneath the image slideshow.*/
 .dot {
   height: 5px;
   width: 5px;
@@ -285,11 +318,12 @@ body {font-family: Verdana,sans-serif;}
   transition: background-color 0.6s ease;
 }
 
+/*CSS to change to the background colour of the dot when it is selected*/
 .active {
   background-color: #717171;
 }
 
-/* Fading animation */
+/* CSS for the fading effect on the slideshow. The fading effect is set to 2 seconds. */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 2s;
@@ -297,111 +331,429 @@ body {font-family: Verdana,sans-serif;}
   animation-duration: 2s;
 }
 
+/*Defines the rules for the animation 'fade'*/
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
  /* RESPONSIVE CSS BELOW*/
-   /* On smaller screens, decrease text size    */
+ 
+/*If the screen is bigger than 350px apply these changes to these properities below*/
 @media only screen and (min-width: 350px) {
-  .text {font-size: 15px}
-  .numbertext{padding-left:100px;}
-  .SlideImage {height:225px; width:270px; border:solid 2px black}
-  .Navlabel {display:block; font-size:20px;}
-  .WelcomeHeader{font-size:25px;}
-  .TabContent{font-size:15px;}
-  .TabHeaders{font-size: 20px;}
-  .PictureHeading{font-size:15px;}
-  .LoginButton {font-size:10px; width:40px; height:30px;}
-  .LogoutButton {font-size:10px; width:40px; height:30px;}
-  .GoogleMapAPI {width:300px; height:250px;}
-  input[type=text], input[type=password] {font-size:15px;}
-  .LoginButton{top:10px; right:10px; width:50px; height:30px; font-size:12px; border:2px solid grey;}
-  .LogoutButton{top:42px; right:10px; width:50px; height:30px; font-size:11px; border:2px solid grey;}
-}
+    .text {
+        font-size: 15px;
+    }
 
+    .numbertext {
+        padding-left: 100px;
+    }
+
+    .SlideImage {
+        height: 225px;
+        width: 270px;
+        border: solid 2px black;
+    }
+
+    .Navlabel {
+        display: block;
+        font-size: 20px;
+    }
+
+    .WelcomeHeader {
+        font-size: 25px;
+    }
+
+    .TabContent {
+        font-size: 15px;
+    }
+
+    .TabHeaders {
+        font-size: 20px;
+    }
+
+    .PictureHeading {
+        font-size: 15px;
+    }
+
+    .LoginButton {
+        font-size: 10px;
+        width: 40px;
+        height: 30px;
+    }
+
+    .LogoutButton {
+        font-size: 10px;
+        width: 40px;
+        height: 30px;
+    }
+
+    .GoogleMapAPI {
+        width: 300px;
+        height: 250px;
+    }
+
+    input[type=text], input[type=password] {
+        font-size: 15px;
+    }
+
+    .LoginButton {
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        height: 30px;
+        font-size: 12px;
+        border: 2px solid grey;
+    }
+
+    .LogoutButton {
+    top: 42px;
+    right: 10px;
+    width: 50px;
+    height: 30px;
+    font-size: 11px;
+    border: 2px solid grey;
+    }
+}
+/*If the screen is bigger than 500px apply these changes to these properities below*/
 @media only screen and (min-width: 500px) {
-  .text {font-size: 20px; max-width:700px; position:relative;}
-  .numbertext{padding-left: 100px;}
-  .SlideImage {height:275px; width:425px; border:solid 3px black; }
-  .dot {height:15px; width:15px;}
-  .Navlabel {display:block; font-size:25px;}
-  .WelcomeHeader{font-size:35px;}
-  .TabHeaders{font-size: 25px;}
-  .TabContent{font-size:20px;}
-  .PictureHeading{font-size:20px;}
-  .LoginButton {font-size:20px; width:60px; height:40px;}
-  .LogoutButton {font-size:20px; width:60px; height:40px;}
-  .GoogleMapAPI {width:450px; height:300px;}
-  input[type=text], input[type=password] {font-size:20px;}
-  .LoginButton{top:10px; right:10px; width:75px; height:35px; font-size:15px; border:3px solid grey;}
-  .LogoutButton{top:47px; right:10px; width:75px; height:35px; font-size:14px; border:3px solid grey;}
-}
+    .text {
+        font-size: 20px;
+        max-width: 700px;
+        position: relative;
+    }
 
+    .numbertext {
+        padding-left: 100px;
+    }
+
+    .SlideImage {
+        height: 275px;
+        width: 425px;
+        border: solid 3px black;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+    }
+
+    .Navlabel {
+        display: block;
+        font-size: 25px;
+    }
+
+    .WelcomeHeader {
+        font-size: 35px;
+    }
+
+    .TabHeaders {
+        font-size: 25px;
+    }
+
+    .TabContent {
+        font-size: 20px;
+    }
+
+    .PictureHeading {
+        font-size: 20px;
+    }
+
+    .LoginButton {
+        font-size: 20px;
+        width: 60px;
+        height: 40px;
+    }
+
+    .LogoutButton {
+        font-size: 20px;
+        width: 60px;
+        height: 40px;
+    }
+
+    .GoogleMapAPI {
+        width: 450px;
+        height: 300px;
+    }
+
+    input[type=text], input[type=password] {
+        font-size: 20px;
+    }
+
+    .LoginButton {
+        top: 10px;
+        right: 10px;
+        width: 75px;
+        height: 35px;
+        font-size: 15px;
+        border: 3px solid grey;
+    }
+
+    .LogoutButton {
+        top: 47px;
+        right: 10px;
+        width: 75px;
+        height: 35px;
+        font-size: 14px;
+        border: 3px solid grey;
+    }
+}
+/*If the screen is bigger than 750px apply these changes to these properities below*/
 @media only screen and (min-width: 750px) {
-  .text {font-size: 20px; padding-top:35px;  max-width:750px; text-align:center;}
-  .numbertext{padding-left: 60px;}
-  .SlideImage {height:350px; width:450px; border:solid 5px black; margin-left:30px; margin-right:20px;}
-  .SlideImageContainer{ float:left; max-width:750px;}
-  .DotContainer{max-width:500px;}
-  .Navlabel {display:block; font-size:25px;}
-  .WelcomeHeader{font-size:50px;}
-  .TabHeaders{font-size: 30px;}
-  .TabContent{font-size:20px;}
-  .PictureHeading{font-size:25px;}
-  .LoginButton {font-size:20px; width:60px; height:40px;}
-  .LogoutButton {font-size:20px; width:60px; height:40px;}
-  .GoogleMapAPI {width:600px; height:400px;}
-  input[type=text], input[type=password] {font-size:20px;}
-  .LoginButton{top:10px; right:10px; width:100px; height:45px; font-size:20px; border:3px solid grey;}
-  .LogoutButton{top:60px; right:10px; width:100px; height:45px; font-size:18px; border:3px solid grey;}
-}
+    .text {
+        font-size: 20px;
+        padding-top: 35px;
+        max-width: 750px;
+        text-align: center;
+    }
 
+    .numbertext {
+        padding-left: 60px;
+    }
+
+    .SlideImage {
+        height: 350px;
+        width: 450px;
+        border: solid 5px black;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+    .SlideImageContainer {
+        float: left;
+        max-width: 750px;
+    }
+
+    .DotContainer {
+        max-width: 500px;
+    }
+
+    .Navlabel {
+        display: block;
+        font-size: 25px;
+    }
+
+    .WelcomeHeader {
+        font-size: 50px;
+    }
+
+    .TabHeaders {
+        font-size: 30px;
+    }
+
+    .TabContent {
+        font-size: 20px;
+    }
+
+    .PictureHeading {
+        font-size: 25px;
+    }
+
+    .LoginButton {
+        font-size: 20px;
+        width: 60px;
+        height: 40px;
+    }
+
+    .LogoutButton {
+        font-size: 20px;
+        width: 60px;
+        height: 40px;
+    }
+
+    .GoogleMapAPI {
+        width: 600px;
+        height: 400px;
+    }
+
+    input[type=text], input[type=password] {
+        font-size: 20px;
+    }
+
+    .LoginButton {
+        top: 10px;
+        right: 10px;
+        width: 100px;
+        height: 45px;
+        font-size: 20px;
+        border: 3px solid grey;
+    }
+
+    .LogoutButton {
+        top: 60px;
+        right: 10px;
+        width: 100px;
+        height: 45px;
+        font-size: 18px;
+        border: 3px solid grey;
+    }
+}
+/*If the screen is bigger than 1000px apply these changes to these properities below*/
 @media only screen and (min-width: 1000px) {
-  .text {font-size: 25px; padding-top:30px;  max-width:1000px; text-align:center;}
-  .numbertext{padding-left: 100px;}
-  .SlideImage {height:450px; width:650px; border:solid 7px black}
-  .SlideImageContainer{ float:left; max-width:1000px;}
-  .DotContainer{max-width:675px;}
-  .Navlabel {display:block; font-size:30px;}
-  .WelcomeHeader{font-size:50px;}
-  .TabHeaders{font-size: 35px;}
-  .TabContent{font-size:30px;}
-  .PictureHeading{font-size:30px;}
-  .LoginButton {font-size:25px; width:100px; height:60px;}
-  .LogoutButton {font-size:25px; width:100px; height:60px;}
-  .GoogleMapAPI {width:600px; height:450px;}
-  input[type=text], input[type=password] {font-size:25px;}
-  .LoginButton{top:30px; right:10px; width:100px; height:45px; font-size:20px; border:3px solid grey;}
-  .LogoutButton{top:100px; right:10px; width:100px; height:45px; font-size:18px; border:3px solid grey;}
-}
+    .text {
+        font-size: 25px;
+        padding-top: 30px;
+        max-width: 1000px;
+        text-align: center;
+    }
 
+    .numbertext {
+        padding-left: 100px;
+    }
+
+    .SlideImage {
+        height: 450px;
+        width: 650px;
+        border: solid 7px black;
+    }
+
+    .SlideImageContainer {
+        float: left;
+        max-width: 1000px;
+    }
+
+    .DotContainer {
+        max-width: 675px;
+    }
+
+    .Navlabel {
+        display: block;
+        font-size: 30px;
+    }
+
+    .WelcomeHeader {
+        font-size: 50px;
+    }
+
+    .TabHeaders {
+        font-size: 35px;
+    }
+
+    .TabContent {
+        font-size: 30px;
+    }
+
+    .PictureHeading {
+        font-size: 30px;
+    }
+
+    .LoginButton {
+        font-size: 25px;
+        width: 100px;
+        height: 60px;
+    }
+
+    .LogoutButton {
+        font-size: 25px;
+        width: 100px;
+        height: 60px;
+    }
+
+    .GoogleMapAPI {
+        width: 600px;
+        height: 450px;
+    }
+
+    input[type=text], input[type=password] {
+        font-size: 25px;
+    }
+
+    .LoginButton {
+        top: 30px;
+        right: 10px;
+        width: 100px;
+        height: 45px;
+        font-size: 20px;
+        border: 3px solid grey;
+    }
+
+    .LogoutButton {
+        top: 100px;
+        right: 10px;
+        width: 100px;
+        height: 45px;
+        font-size: 18px;
+        border: 3px solid grey;
+    }
+}
+/*If the screen is bigger than 1300px apply these changes to these properities below*/
 @media only screen and (min-width: 1300px) {
-  .text {font-size: 30px; padding-top:150px;  max-width:1300px; text-align:center;}
-  .SlideImage {margin-left:200px; height:550px; width:800px; border:solid 10px black; margin-left:10px;}
-  .SlideImageContainer{ float:left; max-width:1300px;}
-  .DotContainer{max-width:800px;}
-  .Navlabel {display:block; font-size:30px;}
-  .WelcomeHeader{font-size:70px;}
-  .TabHeaders{font-size: 35px;}
-  .TabContent{font-size:30px;}
-  .PictureHeading{font-size:30px;}
-  .LoginButton {font-size:30px; width:150px; height:60px;}
-  .LogoutButton {font-size:30px; width:150px; height:60px;}
-  .GoogleMapAPI {width:650px; height:450px;}
-  input[type=text], input[type=password] {font-size:30px;}
-}
+    .text {
+        font-size: 30px;
+        padding-top: 150px;
+        max-width: 1300px;
+        text-align: center;
+    }
 
+    .SlideImage {
+        margin-left: 200px;
+        height: 550px;
+        width: 800px;
+        border: solid 10px black;
+        margin-left: 10px;
+    }
+
+    .SlideImageContainer {
+        float: left;
+        max-width: 1300px;
+    }
+
+    .DotContainer {
+        max-width: 800px;
+    }
+
+    .Navlabel {
+        display: block;
+        font-size: 30px;
+    }
+
+    .WelcomeHeader {
+        font-size: 70px;
+    }
+
+    .TabHeaders {
+        font-size: 35px;
+    }
+
+    .TabContent {
+        font-size: 30px;
+    }
+
+    .PictureHeading {
+        font-size: 30px;
+    }
+
+    .LoginButton {
+        font-size: 30px;
+        width: 150px;
+        height: 60px;
+    }
+
+    .LogoutButton {
+        font-size: 30px;
+        width: 150px;
+        height: 60px;
+    }
+
+    .GoogleMapAPI {
+        width: 650px;
+        height: 450px;
+    }
+
+    input[type=text], input[type=password] {
+        font-size: 30px;
+    }
+}
+/*If the screen is bigger than 1500px apply these changes to these properities below*/
 @media only screen and (min-width: 1500px) {
-    .SlideImage {margin-left:150px;}
-    .DotContainer {max-width:950px; padding-left:100px;}
+    .SlideImage {
+        margin-left: 150px;
+    }
+
+    .DotContainer {
+        max-width: 950px;
+        padding-left: 100px;
+    }
 }
 
 
