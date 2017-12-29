@@ -3,7 +3,7 @@
 //If there is a click, execute the function 'OpenLoginForm'
 let LoginButton = document.getElementById('LoginBtn').addEventListener('click', OpenLoginForm);
 //create a variable called LoginForm and assign it to the element with the ID 'LoginPopUp'.
-let LoginForm = document.getElementById('LoginPopUp');
+let LoginForm1 = document.getElementById('LoginPopUp');
 
 //create a function called OpenLoginForm
 function OpenLoginForm() {
