@@ -1,6 +1,6 @@
 ﻿// Add an event listener to the element with the ID 'LoginFormLoginButton' so that when the element is clicked it calls the function 'CLoseLoginForm'
 document.getElementById('LoginFormLoginButton').addEventListener('click', CloseLoginForm);
-//create a variable and assign it to the element with the ID 'LoginPopUp'.
+//create a variable called 'loginform' and assign it to the element with the ID 'LoginPopUp'.
 let LoginForm = document.getElementById('LoginPopUp')
 //create a variable called LogoutBtn and assign it to the element with the ID 'LogoutBtn'.
 let LogoutBtn = document.getElementById('LogoutBtn')
