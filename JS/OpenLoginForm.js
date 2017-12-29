@@ -1,4 +1,4 @@
-﻿//create a variable called LoginButton and assign it to the element with the ID 'LoginBtn'.
+﻿//create a variable called LoginButton and assign it to the element with the ID loginBtn'.
 //Add an eventlistener to listen for a click on to the element with the ID 'LoginBtn'.
 //If there is a click, execute the function 'OpenLoginForm'
 let LoginButton = document.getElementById('LoginBtn').addEventListener('click', OpenLoginForm);
