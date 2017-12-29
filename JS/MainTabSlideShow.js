@@ -18,6 +18,7 @@ function showSlides() {
 
     slideIndex++;
 
+    //if the slideindex is better than the length of slides then slideindex = 1.
     if (slideIndex > slides.length) {
         slideIndex = 1
     }
