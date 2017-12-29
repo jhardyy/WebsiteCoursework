@@ -15,4 +15,13 @@ The 3rd tab is a Menu tab that displays a few different lists with different ite
 
 ## Problems and Issues I faced
 
-## Initial Designs
+## Initial Designs and designing the website
+The reason I have designed the website in this way is due to the fact I believe it provides simple and yet effective navigation. Another reason I chose this design is because a single page application has faster loading times than regular multi page websites.  
+
+A lot of the elements within the website contain a 'hover' attribute and turn a different colour when the user is hovering over the option. This hover feature helps the users to locate where their cursor is and adds to the user friendliness of the website. 
+
+The website is completely responsive and is designed to fit mobile first. The website uses six breakpoints to constantly adjust the sizes of elements to fit to screen.
+
+![Rough Desktop Design](Images/Readme1.jpg)
+
+![Rough mobile Design](Images/Readme2.jpg)
