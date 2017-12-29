@@ -26,6 +26,9 @@ The 3rd tab is a Menu tab that displays a few different lists with different ite
 	
 	* I first coded my CSS and webpage to be desktop first instead of mobile first. This was a major problem as it meant i had to rewrite the majority of my CSS. This took a while but i managed to get everything working mobile first.
 
+4.
+	* When i added comments into my code gitpages started throwing up errors in the console log saying that variables had already been defined. I had three variables named the same. however, they were all located within three separate javascripts. I changed all three of them to different names just in case this was somehow causing an issue. This did get rid of the errors however the core functionality of my website no longer works in gitpages. If I load up my website using visual studio i get no errors and everything works perfectly fine.
+
 ## Initial Designs and designing the website
 The reason I have designed the website in this way is due to the fact I believe it provides simple and yet effective navigation. Another reason I chose this design is because a single page application has faster loading times than regular multi page websites.  
 
