@@ -26,9 +26,11 @@ The 3rd tab is a Menu tab that displays a few different lists with different ite
     
     * I first coded my CSS and webpage to be desktop first instead of mobile first. This was a major problem as it meant I had to rewrite the majority of my CSS. This took a while but I managed to get everything working mobile first.
 
-4.
+4. Gitpages are not working
     * When I added comments into my code gitpages started throwing up errors in the console log saying that variables had already been defined. I had three variables named the same. however, they were all located in three separate javascript. I changed all three of them to different names just in case this was somehow causing an issue. This did get rid of the errors however the core functionality of my website no longer works in gitpages. If I load up my website using visual studio I get no errors and everything works perfectly fine.
 
+5. Refreshing the page clears cookie message.
+	* One problem i have is that when the user is logged in and refreshes the page, the personalised message from the cookies is taken away. I tried to code a function that would check to see if a cookie exists when the page is loaded but couldn't quite figure it out. This could be a future opportunity for the website.
 ## Initial Designs and designing the website
 The reason I have designed the website in this way is due to the fact I believe it provides simple and yet effective navigation. Another reason I chose this design is that a single page application has faster loading times than regular multi-page websites.  
 
@@ -66,3 +68,19 @@ I ran my CSS code through the validator and the results are below. I got no erro
 I ran my HTML through an accessibility checker and the results are shown below. I got 6 known problems, they all relate to the inputs for the username and password on the login form. All 6 errors seen to be pointing out that the inputs for username and password have no text inside them. However, instead, I have placeholders inside the text inputs which act in a very similar way.
 
 ![HTMLValidatorResults](/Images/AccessibilityValidatorResults.png)
+
+## References
+
+Throughtout developing my website i used these references below:
+
+https://developers.google.com/maps/documentation/embed/start 
+
+https://www.w3schools.com/charsets/ref_html_entities_4.asp 
+
+https://www.w3schools.com/js/js_cookies.asp 
+
+https://www.w3schools.com/w3css/w3css_slideshow.asp 
+
+https://calcheck.co.uk/js/welcome.js 
+
+https://www.w3schools.com/js/js_htmldom_eventlistener.asp 
