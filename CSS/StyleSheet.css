@@ -15,7 +15,7 @@ body{
 /*The CSS below applies to every input tag aswell as the class 'TabContent'.*/
 input,
 .TabContent {
-   /*Property to set the display to none making it so the user can't see the element with the class.*/
+  /*Property to set the display to none making it so the user can't see the element with the class.*/
   display: none;
   /*Property to give the padding the size of the 1 times the font size.*/
   padding: 1em;
@@ -40,6 +40,14 @@ input,
 .Navlabel:hover {
     color:black;
 }
+
+/*When clicked, the attribute 'checked' of the input tag
+  becomes true, so the section tags with IDs 'content1-3' can
+  be targeted in relation to each radio button.
+
+  This changes the display of specific section elements
+  from none to block, effectively making them visable to the user. It does only when the 
+  associated and also preceding radio button becomes 'checked'. */
 
 #TabNumber1:checked ~ #Tab1Content,
 #TabNumber2:checked ~ #Tab2Content,
