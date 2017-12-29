@@ -9,7 +9,7 @@ window.addEventListener('click', CloseWindow);
 //Create a function called closewindow
 function CloseWindow(event) {
     //if the target being clicked is the close button and is not the login form or the then hide the login form. 
-    if (event.target != LoginForm || event.target == CloseX) {
+    if (event.target == LoginForm || event.target == CloseX) {
         LoginForm.style.display = "none";
     }
 }
