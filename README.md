@@ -14,14 +14,25 @@ The 2nd tab is an 'About us' tab that has some basic information about the resta
 The 3rd tab is a Menu tab that displays a few different lists with different items. These lists act as restaurant menus. 
 
 ## Problems and Issues I faced
+1. Having code that used 'onclick' 
+
+* The code for the JavaScript cookies that I used and adapted from W3 schools used onclick extensions. This was a problem due to the fact I needed this code to use event listeners. To fix this issue I went back to the lab exercises to find out how they worked. Once I had understood how the event listeners work I tried to incorporate what I had learnt into the code for the cookies. It took a few iterations to successfully replace the onclicks with event listeners but eventually it worked. 
+
+2. Having code that used 'document.write' instead of inner HTML. 
+
+* The code for the greeting I used from https://calcheck.co.uk/ used document.write to write out the greeting generated from the javascript. 
 
 ## Initial Designs and designing the website
 The reason I have designed the website in this way is due to the fact I believe it provides simple and yet effective navigation. Another reason I chose this design is because a single page application has faster loading times than regular multi page websites.  
 
 A lot of the elements within the website contain a 'hover' attribute and turn a different colour when the user is hovering over the option. This hover feature helps the users to locate where their cursor is and adds to the user friendliness of the website. 
 
-The website is completely responsive and is designed to fit mobile first. The website uses six breakpoints to constantly adjust the sizes of elements to fit to screen.
+The website is completely responsive and is designed to fit mobile first. The website uses six breakpoints to constantly adjust the sizes of elements to fit bigger screens.
 
-![Rough Desktop Design](/Images/Readme1.jpg)
+Below is the rough and simple sketch of the Mobile version of the website. 
 
-![Rough mobile Design](/Images/Readme2.jpg)
+![Rough Mobile Design](/Images/Readme1.jpg)
+
+Below is the rough and simple sketch of the desktop version of the website for bigger screens. The breakpoints will change how certain elements look to make them fit the webpage better.
+
+![Rough Desktop Design](/Images/Readme2.jpg)
