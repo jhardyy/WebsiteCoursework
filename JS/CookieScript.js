@@ -63,6 +63,8 @@ function deleteCookie(name) {
     alert("You have Logged out");
 }
 
+
+//COULDN'T GET TO WORK REFER TO READ ME PROBLEM 5.
 //window.addEventListener('load', OnloadCheck);
 //function OnloadCheck() {
   //  alert("hello");
