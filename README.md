@@ -40,3 +40,5 @@ Below is the rough and simple sketch of the Mobile version of the website.
 Below is the rough and simple sketch of the desktop version of the website for bigger screens. The breakpoints will change how certain elements look to make them fit the webpage better.
 
 ![Rough Desktop Design](/Images/Readme2.jpg)
+
+## User testing

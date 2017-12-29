@@ -30,21 +30,26 @@ function getCookie(CookieName) {
 
 //create a function called checkCookie with the parameter User.
 function checkCookie(User) {
-    var User = getCookie("Username");
     //create a variable called CookieValueHolder and assign it the value of the element with the ID UsernameHolder
     let CookieValueHolder = document.getElementById('UsernameHolder').value;
-    //if the CookieValueholders is either UsernameHolder, blank or null then alert the user and tell that that they need to insert a valid username.
-    if (CookieValueHolder == 'UsernameHolder' | CookieValueHolder == "" | CookieValueHolder == null) {
+    var User = getCookie("Username");
+    if (User != "") {
+        //if the CookieValueholders is either UsernameHolder, blank or null then alert the user and tell that that they need to insert a valid username.
+        if (CookieValueHolder == 'UsernameHolder' | CookieValueHolder == "" | CookieValueHolder == null) {
+            alert("Please enter a valid Username");
+        }
+            //else, alert the user and thank them for logging in with a personal greeting using the username they just entered.
+        else {
+            alert("Thank you for logging in  " + CookieValueHolder);
+            //call the function setCookie and pass it the parameters Username, CookieValueHolder and 30.
+            setCookie('Username', CookieValueHolder, 30);
+            //Execute the function PerformGreeting and pass it the parameter CookieValueHolder. 
+            PerformGreeting(CookieValueHolder);
+            }
+    }
+    else {
         alert("Please enter a valid Username");
     }
-    //else, alert the user and thank them for logging in with a personal greeting using the username they just entered.
-    else {
-        alert("Thank you for logging in  " + CookieValueHolder);
-        //call the function setCookie and pass it the parameters Username, CookieValueHolder and 30.
-        setCookie('Username', CookieValueHolder, 30);
-        //Execute the function PerformGreeting and pass it the parameter CookieValueHolder. 
-        PerformGreeting(CookieValueHolder);
-         }
     }
 
 //Add an event listener to the element with the ID 'LogoutBtn' and listen for a click. If a click happens, call the function 'deleteCookie'.
@@ -58,6 +63,16 @@ function deleteCookie(name) {
     alert("You have Logged out");
 }
 
+//window.addEventListener('load', OnloadCheck);
+//function OnloadCheck() {
+  //  alert("hello");
+  //  var User = getCookie("Username");
+  //  if (User != "") {
+  //      PerformGreeting(User)
+ //   }
+//}
+
+
 //create a function called PerformGreeting with the parameter User.
 function PerformGreeting(User) {
     //create a variable called myName and assign it the element with the ID 'Username'.
@@ -70,6 +85,3 @@ function PerformGreeting(User) {
     return false;
 }
 
-function OnloadCheck(User) {
-
-}
