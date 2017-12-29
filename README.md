@@ -24,7 +24,7 @@ The 3rd tab is a Menu tab that displays a few different lists with different ite
 
 3. I coded my CSS to be Desktop first and scale using max-width breakpoints.
 	
-	* 
+	* I first coded my CSS and webpage to be desktop first instead of mobile first. This was a major problem as it meant i had to rewrite the majority of my CSS. This took a while but i managed to get everything working mobile first.
 
 ## Initial Designs and designing the website
 The reason I have designed the website in this way is due to the fact I believe it provides simple and yet effective navigation. Another reason I chose this design is because a single page application has faster loading times than regular multi page websites.  
