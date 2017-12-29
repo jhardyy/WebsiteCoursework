@@ -1,6 +1,6 @@
-#WebsiteCoursework - DMU Restaurant
+# WebsiteCoursework - DMU Restaurant
 
-##About the Website
+## About the Website
 This website is for a restaurant located on site at DMU university. Located at the very top of the page in the header of the webpage, there is a JavaScript greeting. The greeting changes depending on what time of day the user visits the website. It has a universal banner located at the top of the website that uses a section element as an image container. It also contains a h1 element that acts as a website title.  
 
 The website has a login button located in the banner. Pressing this button causes a login form pops up. The website has basic built in validation for the username. If the user leaves the username field of the form blank, it will cause an alert notifying the user that they must enter a valid username.  
@@ -13,6 +13,6 @@ The 2nd tab is an 'About us' tab that has some basic information about the resta
 
 The 3rd tab is a Menu tab that displays a few different lists with different items. These lists act as restaurant menus. 
 
-##Problems and Issues I faced
+## Problems and Issues I faced
 
-##Initial Designs
+## Initial Designs
