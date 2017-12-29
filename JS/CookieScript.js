@@ -30,6 +30,7 @@ function getCookie(CookieName) {
 
 //create a function called checkCookie with the parameter User.
 function checkCookie(User) {
+    var User = getCookie("Username");
     //create a variable called CookieValueHolder and assign it the value of the element with the ID UsernameHolder
     let CookieValueHolder = document.getElementById('UsernameHolder').value;
     //if the CookieValueholders is either UsernameHolder, blank or null then alert the user and tell that that they need to insert a valid username.
@@ -67,4 +68,8 @@ function PerformGreeting(User) {
     myName.innerHTML = userName;
     event.preventDefault();
     return false;
+}
+
+function OnloadCheck(User) {
+
 }
