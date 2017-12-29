@@ -53,8 +53,8 @@ I got my..
 ## Validtor Results
 I ran my HTML code through the validator and the results are below. I got one warning which was a blank heading. The reason this heading is blank is due to the fact it is set via a javascript greeting.
 
-![HTMLValidatorResults](/Images/HTMLValidatorResults.jpg)
+![HTMLValidatorResults](/Images/HTMLValidatorResults.png)
 
 I ran my CSS code through the validator and the results are below. The three warnings i got given were all to do with the webkit animation being an unknown extension.
 
-![HTMLValidatorResults](/Images/CSSValidatorResults.jpg)
+![HTMLValidatorResults](/Images/CSSValidatorResults.png)
