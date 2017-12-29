@@ -1,4 +1,4 @@
-﻿//create a variable called 'LoginForm' and give it the value of the element with the ID 'LoginPopUp'
+﻿//create a variable called 'loginform' and give it the value of the element with the ID 'LoginPopUp'
 let LoginForm = document.getElementById('LoginPopUp')
 //create a variable called 'CloseX' and give it the value of the element with the ID 'CloseButton'
 let CloseX = document.getElementById('CloseButton')

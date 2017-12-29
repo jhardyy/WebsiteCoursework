@@ -1,14 +1,14 @@
 ﻿// Add an event listener to the element with the ID 'LoginFormLoginButton' so that when the element is clicked it calls the function 'CLoseLoginForm'
 document.getElementById('LoginFormLoginButton').addEventListener('click', CloseLoginForm);
-//create a variable called 'loginform' and assign it to the element with the ID 'LoginPopUp'.
-let LoginForm = document.getElementById('LoginPopUp')
+//create a variable called 'popUploginform' and assign it to the element with the ID 'LoginPopUp'.
+let popupLoginForm = document.getElementById('LoginPopUp')
 //create a variable called 'LogoutBtn' and assign it to the element with the ID 'LogoutBtn'.
 let LogoutBtn = document.getElementById('LogoutBtn')
 
 //create a function called CloseLoginForm
 function CloseLoginForm() {
     //Set the display of LoginForm to 'none' making it hidden.
-    LoginForm.style.display = "none";
+    popupLoginForm.style.display = "none";
     //call the function to check if there is a cookie set.
     checkCookie(Username);
     //if the username text box is equal to : blank, null or UsernameHolder then hide the logout button by setting the display to none.
