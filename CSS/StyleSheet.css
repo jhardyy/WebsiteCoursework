@@ -47,9 +47,9 @@ input,
   display: block;
 }
 
-/* CSS for banner at the top of the page.*/
+/*CSS for banner at the top of the page.*/
 
-/* This is the CSS for the class 'image'*/
+/*CSS for the element(s) with the class 'image'*/
 .Image {
     padding-top:10px;
     position:center;
@@ -58,7 +58,7 @@ input,
     padding-bottom:4px; 
 }
 
-/* This is the CSS for the class 'ImageContainer'*/
+/*CSS for the element(s) with the class 'ImageContainer'*/
 .ImageContainer {
     position:relative;
     text-align: center;
@@ -68,16 +68,17 @@ input,
     height: auto;
     width: auto;
 }
-/* This is the CSS for the class 'WelcomeHeader'*/
+/*CSS for the element(s) with the class 'WelcomeHeader'*/
 .WelcomeHeader {
     position:absolute;
+    background-color: rgba(0,0,0,0.4);
     top:8px;
-    left:5px;
+    left:6px;
     font-size:20px;
     display:inline;
 }
 
-/* This is the CSS for the class 'LoginButton'*/
+/*CSS for the element(s) with the class 'LoginButton'*/
 .LoginButton {
     position:absolute;
     background-color:blue;
@@ -92,7 +93,7 @@ input,
     border:solid 1px grey;
 }
 
-/* This is the CSS for the class 'LogoutButton'*/
+/*CSS for the element(s) with the class 'LogoutButton'*/
 .LogoutButton {
     position:absolute;
     background-color:blue;
@@ -111,7 +112,7 @@ input,
 .LoginButton:hover , .LogoutButton:hover {
     opacity: 0.8;
 }
-/* CSS for the main section of the body*/
+/*CSS for the main section of the body*/
 
 /*CSS for the class 'MainSection'*/
 .MainSection {
@@ -123,7 +124,7 @@ input,
     font-size:10px;
 }
 
-/*CSS for the element with the class 'PageSplitter'*/
+/*CSS for the element(s) with the class 'PageSplitter'*/
 #PageSplitter {
     border:solid;
     text-align:center;
@@ -132,28 +133,28 @@ input,
     width:100%;
 }
 
-/*CSS for the element with the class 'TabContent'*/
+/*CSS for the element(s) with the class 'TabContent'*/
 .TabContent {  
     font-size:inherit;
 }
 
-/*CSS for the element with the class 'TabHeader'*/
+/*CSS for the element(s) with the class 'TabHeader'*/
 .TabHeaders {
     font-size:15px;
 }
 
-/*CSS for the element with the class 'TabHeader'*/
+/*CSS for the element(s) with the class 'TabHeader'*/
 .PictureHeading {
     font-size:10px;
 }
 
-/*CSS for the element with the class 'MenuContainer'*/
+/*CSS for the element(s) with the class 'MenuContainer'*/
 .MenuContainer {
     width:30%;
     display:inline-block;
 }
 
-/*CSS for the element with the class 'AboutUSTab'*/
+/*CSS for the element(s) with the class 'AboutUSTab'*/
 .AboutUsTab {
     font-size:inherit;
     position:relative;
@@ -162,7 +163,7 @@ input,
     height:auto;
 }
 
-/*CSS for the element with the class 'GoogleMapAPI'*/
+/*CSS for the element(s) with the class 'GoogleMapAPI'*/
 .GoogleMapAPI {
     position:relative;
     width:200px;
@@ -170,7 +171,7 @@ input,
     border:2px solid black;
 }
 
-/*CSS for the element with the class 'GoogleMapAPIContainer'*/
+/*CSS for the element(s) with the class 'GoogleMapAPIContainer'*/
 .GoogleMapAPIContainer {
     text-align:center;
 }
@@ -205,7 +206,7 @@ input[type=text], input[type=password] {
     background-color:black;
 }
 
-/*CSS for the element with the class 'LoginFormContainer' */
+/*CSS for the element(s) with the class 'LoginFormContainer' */
 .LoginFormContainer {
     padding: 16px;
 }
@@ -623,6 +624,7 @@ input[type=text], input[type=password] {
 
     .WelcomeHeader {
         font-size: 50px;
+        left:10px;
     }
 
     .TabHeaders {

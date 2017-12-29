@@ -1,16 +1,16 @@
 ﻿function setCookie(CookieName, CookieValue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toGMTString();
+    let date = new Date();
+    date.setTime(date.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + date.toGMTString();
     document.cookie = CookieName + "=" + CookieValue + ";" + expires + ";path=/";
 }
 
 function getCookie(CookieName) {
-    var name = CookieName + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
+    let name = CookieName + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
     for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
+        let c = ca[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
@@ -22,7 +22,7 @@ function getCookie(CookieName) {
 }
 
 function checkCookie(User) {
-    var CookieValueHolder = document.getElementById('UsernameHolder').value;
+    let CookieValueHolder = document.getElementById('UsernameHolder').value;
     if (CookieValueHolder == 'UsernameHolder' | CookieValueHolder == "" | CookieValueHolder == null) {
         alert("Please enter a valid Username");
     }
